@@ -1,0 +1,33 @@
+body {
+    height: 100vh;
+    background: #2e2e2e;
+    color: #f8f8f2;
+}
+
+a {
+    color: #8be9fd;
+}
+
+code {
+    background: #2e2e2e;
+    color: #f8f8f2;
+}
+
+#content {
+    background: #2e2e2e;
+    display: block;
+    width: 35em;
+    margin: 10em auto;
+    float:  right;
+    padding-right: 100px;
+}
+
+h2, h3, h4, h5, h6 {
+    margin-top: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+    #content {
+        width: 100%;
+    }
+}
