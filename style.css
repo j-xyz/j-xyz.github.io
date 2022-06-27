@@ -17,10 +17,10 @@ code {
 #content {
     background: #2e2e2e;
     display: block;
-    width: 36em;
+    width: 32em;
     margin: 10em auto;
     float:  right;
-    /*padding-right: 100px;*/
+    padding-right: 8em;
 }
 
 h2, h3, h4, h5, h6 {
