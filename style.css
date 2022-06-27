@@ -20,7 +20,7 @@ code {
     width: 35em;
     margin: 10em auto;
     float:  right;
-    padding-right: 100px;
+    /*padding-right: 100px;*/
 }
 
 h2, h3, h4, h5, h6 {
