@@ -14,13 +14,21 @@ code {
     color: #f8f8f2;
 }
 
-#content {
+/*#content {
     background: #2e2e2e;
     display: block;
     width: 32em;
     margin: 10em auto;
     float:  right;
     padding-right: 8em;
+}*/
+
+#content {
+    background: #2e2e2e;
+    display: block;
+    width: 40%;
+    float: right;
+    margin: 10em auto;
 }
 
 h2, h3, h4, h5, h6 {
