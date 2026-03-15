@@ -1,7 +1,7 @@
 {
   "name": "j-xyz.github.io",
   "version": "1.0.0",
-  "description": "This repository contains the source for `swiftwork.xyz`, a small professional website for Jane Swift.",
+  "description": "This repository contains the source for `swiftlabs.xyz`, a small professional website for Jane Swift.",
   "scripts": {
     "dev": "eleventy --serve",
     "build": "eleventy"

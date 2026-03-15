@@ -1,6 +1,6 @@
-# swiftwork.xyz
+# swiftlabs.xyz
 
-This repository contains the Eleventy source for `swiftwork.xyz`, a small professional website for Jane Swift.
+This repository contains the Eleventy source for `swiftlabs.xyz`, a small professional website for Jane Swift.
 
 ## Purpose
 
