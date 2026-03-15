@@ -1,15 +1,16 @@
 :root {
-  --bg: #f4efe6;
-  --surface: rgba(255, 250, 242, 0.88);
-  --surface-strong: #fffdf8;
-  --ink: #1c1612;
-  --muted: #5a5047;
-  --line: rgba(28, 22, 18, 0.12);
-  --accent: #b54d2d;
-  --accent-2: #305b5e;
+  --bg: #0b0e14;
+  --surface: #11151c;
+  --surface-strong: #1b212b;
+  --ink: #e6e1cf;
+  --muted: #bfb7a3;
+  --line: #2a3441;
+  --accent: #ffb454;
+  --accent-2: #73d0ff;
+  --accent-3: #aad94c;
   --max: 72rem;
   --radius: 1.5rem;
-  --shadow: 0 20px 45px rgba(33, 25, 21, 0.08);
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.32);
 }
 
 * {
@@ -17,17 +18,17 @@
 }
 
 html {
-  color-scheme: light;
+  color-scheme: dark;
 }
 
 body {
   margin: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Space Mono", monospace;
   color: var(--ink);
   background:
-    radial-gradient(circle at top left, rgba(181, 77, 45, 0.15), transparent 30rem),
-    radial-gradient(circle at top right, rgba(48, 91, 94, 0.18), transparent 28rem),
-    linear-gradient(180deg, #f9f3eb 0%, #f3eadf 100%);
+    radial-gradient(circle at top left, rgba(255, 180, 84, 0.08), transparent 30rem),
+    radial-gradient(circle at top right, rgba(115, 208, 255, 0.09), transparent 28rem),
+    linear-gradient(180deg, #0b0e14 0%, #11151c 100%);
   min-height: 100vh;
 }
 
@@ -40,6 +41,11 @@ a {
 a:hover,
 a:focus-visible {
   color: var(--accent);
+}
+
+p,
+li {
+  font-size: 0.98rem;
 }
 
 img {
@@ -70,7 +76,7 @@ img {
 
 .brand-mark {
   display: inline-block;
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
@@ -78,8 +84,9 @@ img {
 
 .brand-name {
   display: block;
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 700;
+  letter-spacing: 0.04em;
 }
 
 .site-nav {
@@ -93,6 +100,9 @@ img {
   color: var(--ink);
   padding-bottom: 0.2rem;
   border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
 }
 
 .site-nav a[aria-current="page"] {
@@ -107,7 +117,6 @@ img {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  backdrop-filter: blur(14px);
 }
 
 .hero {
@@ -135,28 +144,29 @@ h1,
 h2,
 h3 {
   margin: 0 0 0.9rem;
-  line-height: 1.05;
+  line-height: 1.15;
+  font-weight: 700;
 }
 
 h1 {
-  font-size: clamp(2.6rem, 6vw, 5.2rem);
+  font-size: clamp(2.2rem, 5vw, 4.4rem);
   max-width: 11ch;
 }
 
 h2 {
-  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-size: clamp(1.4rem, 2.6vw, 2rem);
 }
 
 h3 {
-  font-size: 1.15rem;
+  font-size: 1rem;
 }
 
 .lede,
 .panel-copy,
 .section-copy,
 .list-copy {
-  font-size: 1.05rem;
-  line-height: 1.75;
+  font-size: 0.98rem;
+  line-height: 1.8;
   color: var(--muted);
 }
 
@@ -195,23 +205,31 @@ h3 {
   border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
 }
 
 .button {
-  background: var(--ink);
-  color: #fff7ee;
+  background: var(--accent);
+  color: var(--bg);
 }
 
 .button:hover,
 .button:focus-visible {
-  color: #fff7ee;
-  background: var(--accent);
+  color: var(--bg);
+  background: #ffd173;
 }
 
 .button-secondary {
   background: transparent;
   color: var(--ink);
   border: 1px solid var(--line);
+}
+
+.button-secondary:hover,
+.button-secondary:focus-visible {
+  background: rgba(115, 208, 255, 0.08);
 }
 
 .section-grid {
@@ -267,6 +285,9 @@ h3 {
 .site-footer {
   padding: 0 0 2rem;
   color: var(--muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .site-footer .site-shell {
@@ -287,8 +308,8 @@ h3 {
   left: 1rem;
   top: 1rem;
   z-index: 10;
-  background: var(--ink);
-  color: #fff;
+  background: var(--accent);
+  color: var(--bg);
   padding: 0.6rem 0.8rem;
   border-radius: 0.5rem;
 }
