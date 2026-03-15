@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if title %}{{ title }} | {{ site.personName }}{% else %}{{ site.personName }} | Hospitality, product, and software systems{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description or site.description }}">
+    <link rel="canonical" href="{{ site.domain }}{{ page.url }}">
+    <meta property="og:title" content="{% if title %}{{ title }} | {{ site.personName }}{% else %}{{ site.personName }} | Hospitality, product, and software systems{% endif %}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.domain }}{{ page.url }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="theme-color" content="#f4efe6">
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <link rel="manifest" href="/site.webmanifest">
+    {% if page.url == "/" %}
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "{{ site.personName }}",
+        "url": "{{ site.domain }}/",
+        "email": "mailto:{{ site.email }}",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "New York",
+          "addressRegion": "NY",
+          "addressCountry": "US"
+        },
+        "description": "{{ site.description }}"
+      }
+    </script>
+    {% endif %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-shell">
+        <a class="brand" href="/">
+          <span class="brand-mark">{{ site.siteName }}</span>
+          <span class="brand-name">{{ site.personName }}</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          {% for item in site.nav %}
+          <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+          {% endfor %}
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="site-shell">
+      {{ content | safe }}
+    </main>
+    <footer class="site-footer">
+      <div class="site-shell">
+        <p>{{ site.siteName }}</p>
+        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+      </div>
+    </footer>
+  </body>
+</html>

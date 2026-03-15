@@ -1,0 +1,14 @@
+{
+  "siteName": "swiftwork.xyz",
+  "personName": "Jane Swift",
+  "domain": "https://swiftwork.xyz",
+  "email": "jx@swiftlabs.xyz",
+  "location": "New York, NY",
+  "description": "Jane Swift builds more human software and operating systems for modern hospitality businesses.",
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "About", "url": "/about/" },
+    { "label": "Work", "url": "/work/" },
+    { "label": "Contact", "url": "/contact/" }
+  ]
+}
