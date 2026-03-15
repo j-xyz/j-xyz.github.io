@@ -6,9 +6,9 @@
   "location": "New York, NY",
   "description": "Jane Swift builds more human software and operating systems for modern hospitality businesses.",
   "nav": [
-    { "label": "Home", "url": "/" },
-    { "label": "About", "url": "/about/" },
-    { "label": "Work", "url": "/work/" },
-    { "label": "Contact", "url": "/contact/" }
+    { "label": "home", "url": "/" },
+    { "label": "about", "url": "/about/" },
+    { "label": "work", "url": "/work/" },
+    { "label": "contact", "url": "/contact/" }
   ]
 }
