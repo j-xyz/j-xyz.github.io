@@ -1,0 +1,22 @@
+{
+  "name": "j-xyz.github.io",
+  "version": "1.0.0",
+  "description": "This repository contains the source for `swiftwork.xyz`, a small professional website for Jane Swift.",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [
+    "website",
+    "eleventy",
+    "static-site"
+  ],
+  "author": "Jane Swift",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  },
+  "engines": {
+    "node": ">=20 <21"
+  }
+}
