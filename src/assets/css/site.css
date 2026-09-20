@@ -298,41 +298,11 @@ h3 {
   padding-top: 1rem;
   margin: 1.8rem 0 0;
 }
-.table-mark {
-  width: 8rem;
-  height: 8rem;
-  margin: 2rem auto 3rem;
-  position: relative;
-}
-.table-mark span {
-  position: absolute;
-  inset: 1.4rem;
-  border: 1px solid var(--muted);
-  border-radius: 50%;
-}
-.table-mark i {
-  position: absolute;
-  width: 2.2rem;
-  height: 0.65rem;
-  border: 1px solid var(--muted);
-  border-radius: 0.15rem;
-  left: 2.9rem;
-}
-.table-mark i:nth-child(2) {
-  top: 0;
-}
-.table-mark i:nth-child(3) {
-  bottom: 0;
-}
-.table-mark i:nth-child(4) {
-  top: 3.65rem;
-  left: -0.7rem;
-  transform: rotate(90deg);
-}
-.table-mark i:nth-child(5) {
-  top: 3.65rem;
-  left: 6.5rem;
-  transform: rotate(90deg);
+.hearth-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 2rem;
 }
 .section {
   border-top: 1px solid var(--line);
@@ -597,9 +567,6 @@ h3 {
   .field-note {
     margin: 0;
     padding: 1.75rem;
-  }
-  .table-mark {
-    margin-block: 1.5rem 2rem;
   }
   .section {
     padding-block: 3rem;
