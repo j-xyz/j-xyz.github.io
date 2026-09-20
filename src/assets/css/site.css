@@ -262,11 +262,55 @@ h3 {
   margin-left: 0.5rem;
 }
 .field-note {
+  position: relative;
+  isolation: isolate;
   background: var(--note-bg);
   color: var(--ink);
   border: 1px solid var(--line);
   padding: 2rem;
   margin-top: 3rem;
+}
+.field-note > :not(.field-note-background) {
+  position: relative;
+}
+.field-note-background {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  /* Keep the haze away from the text's contrast budget; the hearth stays untouched. */
+  background:
+    radial-gradient(ellipse at 12% 18%, color-mix(in srgb, var(--accent) 13%, transparent), transparent 40%),
+    radial-gradient(ellipse at 75% 5%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 27%),
+    radial-gradient(ellipse at 0% 85%, color-mix(in srgb, var(--accent) 5%, transparent), transparent 50%);
+}
+.field-note-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  /* A muted rose undertone derived from the same theme-aware ember color. */
+  background: radial-gradient(ellipse at 90% 34%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 40%);
+  filter: hue-rotate(-50deg);
+}
+.field-note-network, .field-note-sparkles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.field-note-network {
+  fill: none;
+  stroke: var(--link);
+  opacity: 0.38;
+}
+.field-note-network circle {
+  fill: var(--note-bg);
+}
+.field-note-sparkles {
+  color: var(--accent);
+  opacity: 0.35;
+  mask-image: linear-gradient(#000, #000 var(--field-note-art-bottom, 30%), #0003 var(--field-note-copy-top, 40%), #0001);
 }
 .field-note .eyebrow {
   display: flex;
