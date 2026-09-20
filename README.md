@@ -68,3 +68,9 @@ The generated output lives in `_site/`. The site keeps the custom domain via `sr
 ## Design and verification
 
 The accepted overhaul specification, source checks, verification results and screenshots are in [docs/planning/site-overhaul](docs/planning/site-overhaul/spec.md). Use Node 20 as specified in `.node-version`; the system default may differ. Public copy describes principles and benefits, while implementation details remain in development documentation.
+
+## Theme checks
+
+Run `npm test` on Node 20 for theme preference behavior and light/dark contrast checks. The small theme bootstrap is included before the stylesheet; it follows the system preference until a visitor chooses a theme, then saves that choice locally. With scripting disabled, CSS follows the system preference and hides the switcher.
+
+Theme experiments and their screenshots are recorded in [docs/planning/theme-experiments](docs/planning/theme-experiments/dark-light.md). The original overhaul report remains historical baseline evidence.
