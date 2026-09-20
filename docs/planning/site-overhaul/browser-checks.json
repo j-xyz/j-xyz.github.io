@@ -1,0 +1,137 @@
+{
+  "viewports": [
+    {
+      "route": "/contact/",
+      "size": "desktop",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "route": "/404.html",
+      "size": "desktop",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "route": "/about/",
+      "size": "desktop",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "route": "/",
+      "size": "desktop",
+      "scrollWidth": 1440,
+      "width": 1440
+    },
+    {
+      "route": "/",
+      "size": "390",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "route": "/about/",
+      "size": "390",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "route": "/work/",
+      "size": "390",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "route": "/contact/",
+      "size": "390",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "route": "/404.html",
+      "size": "390",
+      "scrollWidth": 390,
+      "width": 390
+    },
+    {
+      "route": "/",
+      "size": "320",
+      "overflow": [],
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/about/",
+      "size": "320",
+      "overflow": [],
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/work/",
+      "size": "320",
+      "overflow": [],
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/contact/",
+      "size": "320",
+      "overflow": [],
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/404.html",
+      "size": "320",
+      "overflow": [],
+      "scrollWidth": 320,
+      "width": 320
+    },
+    {
+      "route": "/work/",
+      "size": "desktop",
+      "scrollWidth": 1440,
+      "width": 1440
+    }
+  ],
+  "workKeyboardOrder": [
+    {
+      "href": "#main",
+      "text": "Skip to content"
+    },
+    {
+      "href": "/",
+      "text": "Jane Swift\n        swiftlabs.xyz"
+    },
+    {
+      "href": "/",
+      "text": "home"
+    },
+    {
+      "href": "/about/",
+      "text": "about"
+    },
+    {
+      "href": "/work/",
+      "text": "work"
+    },
+    {
+      "href": "/contact/",
+      "text": "contact"
+    },
+    {
+      "href": "/contact/",
+      "text": "Share your perspective ↗"
+    },
+    {
+      "href": "/",
+      "text": "Jane Swift"
+    },
+    {
+      "href": "mailto:jane@swiftlabs.xyz",
+      "text": "jane@swiftlabs.xyz"
+    }
+  ]
+}

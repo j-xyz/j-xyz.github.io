@@ -1,0 +1,99 @@
+{
+  "pages": [
+    {
+      "page": "404.html",
+      "headings": 1,
+      "links": 14,
+      "canonical": "https://swiftlabs.xyz/404.html",
+      "result": "pass"
+    },
+    {
+      "page": "about/index.html",
+      "headings": 4,
+      "links": 13,
+      "canonical": "https://swiftlabs.xyz/about/",
+      "result": "pass"
+    },
+    {
+      "page": "contact/index.html",
+      "headings": 1,
+      "links": 13,
+      "canonical": "https://swiftlabs.xyz/contact/",
+      "result": "pass"
+    },
+    {
+      "page": "index.html",
+      "headings": 8,
+      "links": 14,
+      "canonical": "https://swiftlabs.xyz/",
+      "result": "pass"
+    },
+    {
+      "page": "work/index.html",
+      "headings": 11,
+      "links": 12,
+      "canonical": "https://swiftlabs.xyz/work/",
+      "result": "pass"
+    }
+  ],
+  "sitemap": [
+    "https://swiftlabs.xyz/contact/",
+    "https://swiftlabs.xyz/about/",
+    "https://swiftlabs.xyz/work/",
+    "https://swiftlabs.xyz/"
+  ],
+  "structured_data": "valid Person JSON",
+  "contrast": [
+    {
+      "foreground": "#252d28",
+      "background": "#f5f2e9",
+      "ratio": 12.64
+    },
+    {
+      "foreground": "#566058",
+      "background": "#f5f2e9",
+      "ratio": 5.84
+    },
+    {
+      "foreground": "#234c3b",
+      "background": "#f5f2e9",
+      "ratio": 8.65
+    },
+    {
+      "foreground": "#8d412c",
+      "background": "#f5f2e9",
+      "ratio": 6.41
+    },
+    {
+      "foreground": "#f5f2e9",
+      "background": "#234c3b",
+      "ratio": 8.65
+    },
+    {
+      "foreground": "#d9e1cf",
+      "background": "#234c3b",
+      "ratio": 7.2
+    },
+    {
+      "foreground": "#e0e5d9",
+      "background": "#234c3b",
+      "ratio": 7.55
+    },
+    {
+      "foreground": "#566058",
+      "background": "#e7eadd",
+      "ratio": 5.36
+    },
+    {
+      "foreground": "#8d412c",
+      "background": "#e7eadd",
+      "ratio": 5.88
+    },
+    {
+      "foreground": "#f2cdac",
+      "background": "#234c3b",
+      "ratio": 6.5
+    }
+  ],
+  "scope": "Static build inspection; not browser or assistive-technology execution."
+}
