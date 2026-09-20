@@ -14,7 +14,7 @@ Source files live in `src/`; generated output lives in `_site/` and should not b
 - `npm run dev`: start the Eleventy development server with live rebuilds.
 - `npm run build`: generate the static site into `_site/`.
 
-Use Node 20, matching `.node-version` and the `package.json` engine range (`>=20 <21`).
+Use Node 24.21.0, matching `.node-version` and the `package.json` engine range (`>=24 <25`).
 
 ## Coding Style & Naming Conventions
 

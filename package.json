@@ -15,9 +15,9 @@
   "author": "Jane Swift",
   "license": "MIT",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.2"
+    "@11ty/eleventy": "^3.1.6"
   },
   "engines": {
-    "node": ">=20 <21"
+    "node": ">=24 <25"
   }
 }
