@@ -1,0 +1,117 @@
+[
+  {
+    "path": "node_modules/@11ty/eleventy",
+    "before": "3.1.2",
+    "after": "3.1.6"
+  },
+  {
+    "path": "node_modules/@11ty/posthtml-urls",
+    "before": "1.0.2",
+    "after": "1.0.3"
+  },
+  {
+    "path": "node_modules/@11ty/recursive-copy",
+    "before": "4.0.3",
+    "after": "4.0.4"
+  },
+  {
+    "path": "node_modules/anymatch/node_modules/picomatch",
+    "before": "2.3.1",
+    "after": "2.3.2"
+  },
+  {
+    "path": "node_modules/array-differ",
+    "before": "1.0.0",
+    "after": null
+  },
+  {
+    "path": "node_modules/array-union",
+    "before": "1.0.2",
+    "after": null
+  },
+  {
+    "path": "node_modules/array-uniq",
+    "before": "1.0.3",
+    "after": null
+  },
+  {
+    "path": "node_modules/arrify",
+    "before": "1.0.1",
+    "after": null
+  },
+  {
+    "path": "node_modules/brace-expansion",
+    "before": "1.1.12",
+    "after": "1.1.21"
+  },
+  {
+    "path": "node_modules/gray-matter/node_modules/js-yaml",
+    "before": "3.14.2",
+    "after": "3.15.2"
+  },
+  {
+    "path": "node_modules/js-yaml",
+    "before": "4.1.1",
+    "after": "4.3.2"
+  },
+  {
+    "path": "node_modules/linkify-it",
+    "before": "5.0.0",
+    "after": "5.0.2"
+  },
+  {
+    "path": "node_modules/liquidjs",
+    "before": "10.25.0",
+    "after": "10.29.0"
+  },
+  {
+    "path": "node_modules/markdown-it",
+    "before": "14.1.1",
+    "after": "14.3.2"
+  },
+  {
+    "path": "node_modules/maximatch",
+    "before": "0.1.0",
+    "after": null
+  },
+  {
+    "path": "node_modules/mdurl",
+    "before": "2.0.0",
+    "after": "2.1.0"
+  },
+  {
+    "path": "node_modules/moo",
+    "before": "0.5.3",
+    "after": "0.5.2"
+  },
+  {
+    "path": "node_modules/picomatch",
+    "before": "4.0.3",
+    "after": "4.0.7"
+  },
+  {
+    "path": "node_modules/readdirp/node_modules/picomatch",
+    "before": "2.3.1",
+    "after": "2.3.2"
+  },
+  {
+    "path": "node_modules/semver",
+    "before": "7.7.4",
+    "after": "7.8.5"
+  },
+  {
+    "path": "node_modules/slugify",
+    "before": "1.6.8",
+    "after": "1.6.9"
+  },
+  {
+    "path": "node_modules/tinyglobby",
+    "before": "0.2.15",
+    "after": "0.2.17"
+  },
+  {
+    "path": "node_modules/ws",
+    "before": "8.19.0",
+    "after": "8.21.3"
+  }
+]
