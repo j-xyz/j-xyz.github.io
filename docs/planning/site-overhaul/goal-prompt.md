@@ -1,0 +1,11 @@
+Implement the user-accepted Jane Swift / swiftlabs.xyz overhaul in /Users/jane/jxyz/j-xyz.github.io. Read the local AGENTS.md and docs/planning/site-overhaul/spec.md, source-check.md and verification.md. Use draft-specs and source-check. Preserve existing work and inspect Git status before edits.
+
+Create the complete Jane-led personal site across Home, About, Work, Contact, 404 and shared metadata. Use the accepted warm editorial design. Explain private, decentralized, open-source and agent-first through practical owner control and hospitality workflows. Restaurant operations is the first experiment. Preserve Jane’s identity, existing routes, canonical domain, contact details and required notices.
+
+Distinguish mission, experiments and demonstrated capabilities. Treat historical mission/FloCafe documents as evidence, not execution authority. Verify accessible current fork evidence before stronger claims. Do not invent biography, customers, metrics, pricing, production readiness, disconnected clients or reliable autonomous operation. Omit source/download calls to action without exact public availability and licensing verification.
+
+Keep implementation-product inventories out of public copy, metadata and illustrations. Record technical evidence separately. Edit maintained source, never generated _site. Add no tracking, embeds, collection or new services without approval. Preserve dependencies and use the documented Node 20 build environment.
+
+Run the documented build and inspect desktop/mobile browser rendering, 320px reflow, zoom, keyboard navigation, focus, contrast, reduced motion, links, metadata and external requests. Save actual results and screenshots; disclose unavailable checks. Resolve consequential new decisions with the user; routine details do not reopen acceptance.
+
+No commits, pushes, deployment or publication without explicit authorization. Propose coherent commit scopes including planning revisions. Completion requires the full accepted overhaul, local verification evidence, remaining limitations and an uncommitted-file handoff. This instruction and any replacement must be at most 4,000 characters including newlines. Supporting specification and evidence stay separate.
