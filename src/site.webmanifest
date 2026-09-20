@@ -3,6 +3,6 @@
   "short_name": "swiftlabs.xyz",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f5f2e9",
-  "theme_color": "#f5f2e9"
+  "background_color": "#f7f7f5",
+  "theme_color": "#f7f7f5"
 }
