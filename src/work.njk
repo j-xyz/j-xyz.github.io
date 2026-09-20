@@ -1,40 +1,49 @@
 ---
 layout: layout.njk
 title: Work
-description: Selected focus areas spanning hospitality operations, product, and software systems.
+description: An experimental restaurant application built on FloCafe, exploring owner control through orders, kitchen communication, shift reconciliation, and recovery.
 permalink: /work/index.html
 ---
-<section class="page-panel">
-  <span class="eyebrow">Focus areas</span>
-  <h1>Work shaped by operations, product, and technical fluency.</h1>
-  <p class="panel-copy">
-    This site does not yet publish detailed case studies, but the current focus areas are
-    clear enough to signal fit and direction.
-  </p>
+<section class="page-intro">
+  <p class="eyebrow">Work / First application</p><h1>A restaurant shift is a real test.</h1><p class="lede">The first swiftlabs.xyz application is an experimental FloCafe fork for restaurant operations. It brings a broad question into focus: can the tools a business depends on stay in that business’s hands?</p><p class="status">Experimental · No production-readiness claim</p>
 </section>
-
-<section aria-label="Focus areas">
-  <div class="timeline">
-    <article class="card">
-      <strong>Hospitality systems</strong>
-      <p class="list-copy">
-        Process design, internal tooling, and operational visibility for teams that need
-        software to support service instead of competing with it.
-      </p>
+<section class="editorial section">
+  <h2>The direction</h2>
+  <div class="prose">
+    <p>Keep useful records under the owner’s control. Make access deliberate. Leave a clear path to recovery and to a different provider or maintainer.</p><p>For this experiment, staff devices are intended to use one shared restaurant service. They depend on reaching that service; independent disconnected operation and peer-to-peer replication are not established capabilities.</p>
+  </div>
+</section>
+<section class="section" aria-labelledby="questions-title">
+  <div class="section-heading horizontal">
+    <p class="eyebrow">Questions from the floor</p><h2 id="questions-title">Follow the whole shift.</h2>
+  </div>
+  <div class="workflow-grid">
+    <article>
+      <span class="index">01 / Orders</span><h3>Keep the details intact.</h3><p>Can changes, modifiers and allergy notes stay clear when more than one person is working on an order?</p>
     </article>
-    <article class="card">
-      <strong>Product and delivery</strong>
-      <p class="list-copy">
-        Scoping, prioritization, and execution planning for products with real operational
-        complexity behind the interface.
-      </p>
+    <article>
+      <span class="index">02 / Kitchen</span><h3>Make the handoff clear.</h3><p>Does the right station receive the right information? Can staff distinguish a correction from a new order?</p>
     </article>
-    <article class="card">
-      <strong>Technical decision support</strong>
-      <p class="list-copy">
-        Architecture review, workflow definition, and pragmatic translation between business
-        goals and engineering implementation.
-      </p>
+    <article>
+      <span class="index">03 / Reconciliation</span><h3>Close with confidence.</h3><p>Can the team account for orders, adjustments and recorded tenders at the end of a shift?</p>
+    </article>
+    <article>
+      <span class="index">04 / Recovery</span><h3>Know the way back.</h3><p>Can a business restore its records after a failure, understand what changed, and return to work?</p>
     </article>
   </div>
+</section>
+<section class="evidence-panel" aria-labelledby="status-title">
+  <p class="eyebrow">Where things stand</p><h2 id="status-title">An experiment, with questions still open.</h2>
+  <div class="evidence-grid">
+    <div>
+      <h3>The starting point</h3><p>FloCafe was selected following my local installation and build trial. That is a starting observation, not proof of a complete restaurant workflow.</p>
+    </div>
+    <div>
+      <h3>What still needs evidence</h3><p>The fork’s current end-to-end behavior has not been verified for this site. Device usability, shared-order integrity, recovery, peripherals and payment integrations need their own evidence before stronger claims can be made.</p>
+    </div>
+  </div>
+  <p class="evidence-footnote">Agent assistance remains a design direction. This experiment does not establish reliable autonomous operation or readiness for a live venue.</p>
+</section>
+<section class="invitation compact">
+  <h2>What would you put to the test?</h2><p>I’m interested in the exceptions, handoffs and workarounds that shape a real service.</p><a class="button" href="/contact/">Share your perspective <span aria-hidden="true">↗</span></a>
 </section>

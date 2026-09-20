@@ -2,19 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{% if title %}{{ title }} | {{ site.personName }}{% else %}{{ site.personName }} | Hospitality, product, and software systems{% endif %}</title>
+    <title>{{ title or site.tagline }} | {{ site.personName }} · {{ site.siteName }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ description or site.description }}">
     <link rel="canonical" href="{{ site.domain }}{{ page.url }}">
-    <meta property="og:title" content="{% if title %}{{ title }} | {{ site.personName }}{% else %}{{ site.personName }} | Hospitality, product, and software systems{% endif %}">
+    <meta property="og:title" content="{{ title or site.tagline }} | {{ site.personName }}">
     <meta property="og:description" content="{{ description or site.description }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.domain }}{{ page.url }}">
     <meta name="twitter:card" content="summary">
-    <meta name="theme-color" content="#0b0e14">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#f5f2e9">
+    {% if page.url == "/404.html" %}<meta name="robots" content="noindex">{% endif %}
     <link rel="stylesheet" href="/assets/css/site.css">
     <link rel="manifest" href="/site.webmanifest">
     {% if page.url == "/" %}
@@ -22,43 +20,33 @@
       {
         "@context": "https://schema.org",
         "@type": "Person",
-        "name": "{{ site.personName }}",
-        "url": "{{ site.domain }}/",
-        "email": "mailto:{{ site.email }}",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "New York",
-          "addressRegion": "NY",
-          "addressCountry": "US"
-        },
-        "description": "{{ site.description }}"
+        "name": {{ site.personName | dump | safe }},
+        "url": {{ (site.domain + '/') | dump | safe }},
+        "email": {{ ('mailto:' + site.email) | dump | safe }},
+        "description": {{ site.description | dump | safe }}
       }
     </script>
     {% endif %}
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="site-shell">
-        <a class="brand" href="/">
-          <span class="brand-mark">{{ site.siteName }}</span>
-          <span class="brand-name">{{ site.personName }}</span>
-        </a>
-        <nav class="site-nav" aria-label="Primary">
-          {% for item in site.nav %}
-          <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
-          {% endfor %}
-        </nav>
-      </div>
+    <header class="site-header site-shell">
+      <a class="brand" href="/" aria-label="Jane Swift — home">
+        <span class="brand-name">{{ site.personName }}</span>
+        <span class="brand-domain">{{ site.siteName }}</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        {% for item in site.nav %}
+        <a href="{{ item.url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.label }}</a>
+        {% endfor %}
+      </nav>
     </header>
-    <main id="main" class="site-shell">
+    <main id="main" class="site-shell" tabindex="-1">
       {{ content | safe }}
     </main>
-    <footer class="site-footer">
-      <div class="site-shell">
-        <p>{{ site.siteName }}</p>
-        <p><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-      </div>
+    <footer class="site-footer site-shell">
+      <div><a class="footer-name" href="/">{{ site.personName }}</a><p>{{ site.tagline }}</p></div>
+      <div><a href="mailto:{{ site.email }}">{{ site.email }}</a><p>{{ site.location }} <span aria-hidden="true">·</span> {{ site.siteName }}</p></div>
     </footer>
   </body>
 </html>

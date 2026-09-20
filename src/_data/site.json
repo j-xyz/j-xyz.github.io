@@ -4,11 +4,24 @@
   "domain": "https://swiftlabs.xyz",
   "email": "jane@swiftlabs.xyz",
   "location": "New York, NY",
-  "description": "Jane Swift builds more human software and operating systems for modern hospitality businesses.",
+  "description": "Jane Swift explores computing that gives people and small businesses control over their data, tools, and digital lives. Starting with restaurant work.",
   "nav": [
-    { "label": "home", "url": "/" },
-    { "label": "about", "url": "/about/" },
-    { "label": "work", "url": "/work/" },
-    { "label": "contact", "url": "/contact/" }
-  ]
+    {
+      "label": "home",
+      "url": "/"
+    },
+    {
+      "label": "about",
+      "url": "/about/"
+    },
+    {
+      "label": "work",
+      "url": "/work/"
+    },
+    {
+      "label": "contact",
+      "url": "/contact/"
+    }
+  ],
+  "tagline": "Computing, on human terms."
 }

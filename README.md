@@ -1,14 +1,14 @@
 # swiftlabs.xyz
 
-This repository contains the Eleventy source for `swiftlabs.xyz`, a small professional website for Jane Swift.
+This repository contains the Eleventy source for `swiftlabs.xyz`, Jane Swift’s personal site connecting hospitality work with owner-controlled computing.
 
 ## Purpose
 
 The site serves as:
 
-- a professional homepage
+- a Jane-led introduction to private, decentralized, open-source, agent-first computing
 - a durable contact surface on a custom domain
-- a foundation for future work, writing, and case-study pages
+- an evidence-bounded introduction to the experimental restaurant application
 
 ## Topology
 
@@ -64,3 +64,7 @@ The generated output lives in `_site/`. The site keeps the custom domain via `sr
 - `src/_includes/layout.njk` owns the shared page shell and metadata.
 - `src/_data/site.json` is the central place for site-wide identity and navigation data.
 - `src/assets/` is passed through to the build output unchanged.
+
+## Design and verification
+
+The accepted overhaul specification, source checks, verification results and screenshots are in [docs/planning/site-overhaul](docs/planning/site-overhaul/spec.md). Use Node 20 as specified in `.node-version`; the system default may differ. Public copy describes principles and benefits, while implementation details remain in development documentation.

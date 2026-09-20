@@ -1,19 +1,20 @@
 ---
 layout: layout.njk
 title: Contact
-description: Reach Jane Swift through swiftlabs.xyz.
+description: Contact Jane Swift about hospitality workflows, owner-controlled computing, and collaboration.
 permalink: /contact/index.html
 ---
-<section class="contact-panel">
-  <span class="eyebrow">Contact</span>
-  <h1>Professional inquiries and introductions.</h1>
-  <p class="panel-copy">
-    For collaboration, advisory work, or general professional contact, email is the most
-    reliable path.
-  </p>
-  <div class="card">
-    <p class="panel-copy"><strong>Email:</strong> <a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
-    <p class="panel-copy"><strong>Location:</strong> {{ site.location }}</p>
-    <p class="panel-copy"><strong>Domain:</strong> <a href="{{ site.domain }}/">{{ site.siteName }}</a></p>
+<section class="page-intro">
+  <p class="eyebrow">Contact</p><h1>Tell me about the work.</h1><p class="lede">A workflow your tools don’t understand. A question about owning your data. An idea worth exploring together. I’d like to hear it.</p>
+</section>
+<section class="contact-details section" aria-label="Contact details">
+  <div>
+    <p class="eyebrow">Email Jane</p><a class="contact-email" href="mailto:{{ site.email }}">{{ site.email }} <span aria-hidden="true">↗</span></a><p>For conversations and collaboration, email is the direct route.</p>
   </div>
+  <div>
+    <p class="eyebrow">Based in</p><p class="location">{{ site.location }}</p><p>Hospitality, useful software, and the people behind both.</p>
+  </div>
+</section>
+<section class="contact-note">
+  <p>Curious about the starting point?</p><a class="text-link" href="/work/">Read about the restaurant experiment <span aria-hidden="true">↗</span></a>
 </section>
