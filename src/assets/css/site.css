@@ -696,3 +696,44 @@ h3 {
 img.peek-frame { display: block; width: 100%; height: auto; border-radius: 10px; }
 .peek-slot figcaption { color: var(--muted); font-size: 0.8rem; margin-top: 0.5rem; }
 @media (max-width: 760px) { .peek-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.accent-ticket, .accent-tiles { position: relative; overflow: hidden; }
+.accent-ticket > *, .accent-tiles > * { position: relative; z-index: 1; }
+.accent-ticket::after, .accent-tiles::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.accent-ticket::after {
+  background-image: url("/assets/accents/site-accent-build-ticket.png");
+  width: 37%;
+  max-width: 560px;
+  aspect-ratio: 998 / 1146;
+  right: 4.5%;
+  top: 181px;
+  opacity: 0.55;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 40%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 40%);
+}
+.accent-tiles::after {
+  background-image: url("/assets/accents/site-accent-about-tiles.png");
+  width: 46%;
+  max-width: 720px;
+  aspect-ratio: 924 / 893;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.85;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 28%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 28%);
+}
+html[data-theme="dark"] .accent-tiles::after { display: none; }
+@media (min-width: 900px) and (max-width: 1100px) {
+  .accent-ticket::after, .accent-tiles::after { width: 32%; }
+}
+@media (max-width: 899px) {
+  .accent-ticket::after, .accent-tiles::after { display: none; }
+}
