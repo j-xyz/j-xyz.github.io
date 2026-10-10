@@ -732,6 +732,6 @@ img.peek-frame { display: block; width: 100%; height: auto; border-radius: 10px;
   mask-image: linear-gradient(to right, transparent 0%, #000 28%);
 }
 html[data-theme="dark"] .accent-tiles::after { display: none; }
-@media (max-width: 1099px) {
+@media (max-width: 1279px) {
   .accent-ticket::after, .accent-tiles::after { display: none; }
 }
