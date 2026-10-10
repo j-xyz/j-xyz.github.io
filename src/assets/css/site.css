@@ -687,3 +687,51 @@ h3 {
     scroll-behavior: auto !important;
   }
 }
+
+.offline-passage { max-width: 46rem; }
+.offline-passage h2 { margin-bottom: 1rem; }
+.peek-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 2rem; }
+.peek-slot { margin: 0; }
+.peek-frame { aspect-ratio: 4 / 5; background: var(--surface); border: 1px dashed var(--control-line); border-radius: 0.5rem; }
+img.peek-frame { display: block; width: 100%; height: auto; border-radius: 10px; }
+.peek-slot figcaption { color: var(--muted); font-size: 0.8rem; margin-top: 0.5rem; }
+@media (max-width: 760px) { .peek-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+.page-intro.accent-ticket, .page-intro.accent-tiles { max-width: none; }
+.accent-ticket, .accent-tiles { position: relative; overflow: hidden; }
+.accent-ticket > *, .accent-tiles > * { position: relative; z-index: 1; }
+.accent-ticket::after, .accent-tiles::after {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.accent-ticket::after {
+  background-image: url("/assets/accents/site-accent-build-ticket.png");
+  width: 37%;
+  max-width: 560px;
+  aspect-ratio: 998 / 1146;
+  right: 4.5%;
+  top: 181px;
+  opacity: 0.55;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 40%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 40%);
+}
+.accent-tiles::after {
+  background-image: url("/assets/accents/site-accent-about-tiles.png");
+  width: 46%;
+  max-width: 720px;
+  aspect-ratio: 924 / 893;
+  right: 1%;
+  top: 2rem;
+  transform: none;
+  opacity: 0.85;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 28%);
+  mask-image: linear-gradient(to right, transparent 0%, #000 28%);
+}
+html[data-theme="dark"] .accent-tiles::after { display: none; }
+@media (max-width: 1279px) {
+  .accent-ticket::after, .accent-tiles::after { display: none; }
+}
