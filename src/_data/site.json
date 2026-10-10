@@ -2,7 +2,7 @@
   "siteName": "swiftlabs.xyz",
   "personName": "Jane Swift",
   "domain": "https://swiftlabs.xyz",
-  "email": "jane@swiftlabs.xyz",
+  "email": "hello@swiftlabs.xyz",
   "location": "New York, NY",
   "description": "Jane Swift explores computing that gives people and small businesses control over their data, tools, and digital lives. Starting with restaurant work.",
   "nav": [
@@ -17,6 +17,10 @@
     {
       "label": "work",
       "url": "/work/"
+    },
+    {
+      "label": "build",
+      "url": "/build/"
     },
     {
       "label": "contact",

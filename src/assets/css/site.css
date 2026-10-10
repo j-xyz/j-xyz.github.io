@@ -687,3 +687,12 @@ h3 {
     scroll-behavior: auto !important;
   }
 }
+
+.offline-passage { max-width: 46rem; }
+.offline-passage h2 { margin-bottom: 1rem; }
+.peek-grid { display: grid; gap: 1.25rem; grid-template-columns: repeat(4, minmax(0, 1fr)); margin-top: 2rem; }
+.peek-slot { margin: 0; }
+.peek-frame { aspect-ratio: 4 / 5; background: var(--surface); border: 1px dashed var(--control-line); border-radius: 0.5rem; }
+img.peek-frame { display: block; width: 100%; height: auto; border-radius: 10px; }
+.peek-slot figcaption { color: var(--muted); font-size: 0.8rem; margin-top: 0.5rem; }
+@media (max-width: 760px) { .peek-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
