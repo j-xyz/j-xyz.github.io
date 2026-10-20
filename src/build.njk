@@ -27,9 +27,9 @@ permalink: /build/index.html
   <h3 class="built-heading">Built</h3>
   <ul class="built-list">
     {% for b in built %}
-    <li class="built-item{% if not b.image %} no-shot{% endif %}">
+    <li class="built-item{% if not b.images.length %} no-shot{% endif %}">
       <p>{{ b.text }}</p>
-      {% if b.image %}<figure class="built-fig"><a href="{{ b.image.light }}" target="_blank" rel="noopener"><img class="built-shot theme-light" src="{{ b.image.light }}" alt="{{ b.alt }}" loading="lazy"></a><a href="{{ b.image.dark }}" target="_blank" rel="noopener"><img class="built-shot theme-dark" src="{{ b.image.dark }}" alt="{{ b.alt }}" loading="lazy"></a><figcaption>The app today</figcaption></figure>{% endif %}
+      {% if b.images.length %}<div class="built-figs">{% for img in b.images %}<figure class="built-fig"><a href="{{ img.light }}" target="_blank" rel="noopener"><img class="built-shot theme-light" src="{{ img.light }}" alt="{{ img.alt }}" loading="lazy"></a><a href="{{ img.dark }}" target="_blank" rel="noopener"><img class="built-shot theme-dark" src="{{ img.dark }}" alt="{{ img.alt }}" loading="lazy"></a><figcaption>The app today</figcaption></figure>{% endfor %}</div>{% endif %}
     </li>
     {% endfor %}
   </ul>

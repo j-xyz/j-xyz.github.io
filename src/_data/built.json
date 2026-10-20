@@ -1,59 +1,106 @@
 [
   {
     "text": "Take orders on a register, an iPad or a phone, and add to a check that has already gone to the kitchen.",
-    "image": null,
-    "alt": null
+    "images": [
+      {
+        "light": "/assets/built/orders-menu-light.png",
+        "dark": "/assets/built/orders-menu-dark.png",
+        "alt": "The menu on a phone for table T3: item tiles, category pills, search and a New items button"
+      },
+      {
+        "light": "/assets/built/orders-cart-light.png",
+        "dark": "/assets/built/orders-cart-dark.png",
+        "alt": "The check sheet on a phone: items already ordered, new items and a total"
+      }
+    ]
   },
   {
     "text": "Send orders to the kitchen screen and to the kitchen and receipt printers. The kitchen sees only what is new.",
-    "image": {
-      "light": "/assets/built/kitchen-light.png",
-      "dark": "/assets/built/kitchen-dark.png"
-    },
-    "alt": "The kitchen screen: order tickets in columns, each with its items and a Bump button"
+    "images": [
+      {
+        "light": "/assets/built/kitchen-light.png",
+        "dark": "/assets/built/kitchen-dark.png",
+        "alt": "The kitchen screen: order tickets in columns, each with its items and a Bump button"
+      },
+      {
+        "light": "/assets/built/printers-light.png",
+        "dark": "/assets/built/printers-dark.png",
+        "alt": "The printers list: a front counter printer and a bar printer"
+      }
+    ]
   },
   {
     "text": "Floor plans by room, with the tables where they really are.",
-    "image": null,
-    "alt": null
+    "images": [
+      {
+        "light": "/assets/built/floor-plan-light.png",
+        "dark": "/assets/built/floor-plan-dark.png",
+        "alt": "The floor plan: tables drawn on a grid, coloured by whether they are free, occupied, reserved, cleaning or held"
+      }
+    ]
   },
   {
     "text": "Sold-out items marked right on the menu, with the count left (“3 left”) and a “Running Low” flag.",
-    "image": {
-      "light": "/assets/built/sold-out-light.png",
-      "dark": "/assets/built/sold-out-dark.png"
-    },
-    "alt": "The menu on a phone: some items marked Sold out, one marked 3 left, one marked Running Low"
+    "images": [
+      {
+        "light": "/assets/built/sold-out-light.png",
+        "dark": "/assets/built/sold-out-dark.png",
+        "alt": "The menu on a phone: some items marked Sold out, one marked 3 left and one marked Running Low"
+      }
+    ]
   },
   {
     "text": "A time clock with corrections, side work lists, and a shift log for handover notes.",
-    "image": null,
-    "alt": null
+    "images": [
+      {
+        "light": "/assets/built/shift-log-light.png",
+        "dark": "/assets/built/shift-log-dark.png",
+        "alt": "The shift log: notes written by people on shift, with a handoff and its reply"
+      },
+      {
+        "light": "/assets/built/time-clock-light.png",
+        "dark": "/assets/built/time-clock-dark.png",
+        "alt": "The time clock: clocked in, shift so far and the week with a way to request a fix"
+      }
+    ]
   },
   {
     "text": "Close the day with a check of open checks and the cash you should have.",
-    "image": null,
-    "alt": null
+    "images": [
+      {
+        "light": "/assets/built/close-day-light.png",
+        "dark": "/assets/built/close-day-dark.png",
+        "alt": "Closing the day, step one: the checks still open and their total"
+      }
+    ]
   },
   {
     "text": "Reports that add up to what each bill actually charged.",
-    "image": {
-      "light": "/assets/built/reports-light.png",
-      "dark": "/assets/built/reports-dark.png"
-    },
-    "alt": "The Products report: items, quantities and paid subtotals with a total"
+    "images": [
+      {
+        "light": "/assets/built/reports-light.png",
+        "dark": "/assets/built/reports-dark.png",
+        "alt": "The Products report: items, quantities and paid subtotals with a total"
+      }
+    ]
   },
   {
     "text": "Roles that say who may do what, with every change on the record.",
-    "image": {
-      "light": "/assets/built/change-log-light.png",
-      "dark": "/assets/built/change-log-dark.png"
-    },
-    "alt": "The change log: who changed what and when, with before-and-after detail"
+    "images": [
+      {
+        "light": "/assets/built/roles-light.png",
+        "dark": "/assets/built/roles-dark.png",
+        "alt": "Staff roles: the Owner role and its permissions"
+      },
+      {
+        "light": "/assets/built/change-log-light.png",
+        "dark": "/assets/built/change-log-dark.png",
+        "alt": "The change log: who changed what and when, with before-and-after detail"
+      }
+    ]
   },
   {
     "text": "Your records stay on a machine you own. Nothing leaves it unless the owner turns it on.",
-    "image": null,
-    "alt": null
+    "images": []
   }
 ]

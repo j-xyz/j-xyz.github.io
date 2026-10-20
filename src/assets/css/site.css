@@ -784,3 +784,4 @@ html[data-theme="dark"] .accent-tiles::after { display: none; }
   :root:not([data-theme="light"]) .built-fig a:has(.theme-dark) { display: block; }
 }
 @media (max-width: 760px) { .built-item, .built-item.no-shot { grid-template-columns: 1fr; } .built-fig { max-width: 20rem; } }
+.built-figs { display: grid; gap: 0.9rem; }
