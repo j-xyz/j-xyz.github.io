@@ -9,61 +9,14 @@ permalink: /whats-new/index.html
 </section>
 <section class="editorial section">
   <div class="prose">
-    <h3>The October 15 update</h3>
-    <p>A calmer look across the app, and the register on more screens.</p>
+    {% for u in updates %}
+    <h3>{{ u.name }}</h3>
+    <p>{{ u.intro }}</p>
     <ul>
-      <li>The whole app has a calmer look, with one highlighted main action on each screen.</li>
-      <li>The desktop register gets the new look, with a Checks button and a list of open checks.</li>
-      <li>An iPad held upright now uses the tablet layout, and the empty band across the top is gone.</li>
-      <li>Kitchen tickets print the check's note.</li>
-      <li>On a keyboard, o, t and c open the check details with that field ready to edit.</li>
-      <li>Escape closes the menu on a phone.</li>
-      <li>The customer-facing display shows every active order, not just the newest 50.</li>
+      {% for item in u.items %}<li>{{ item }}</li>
+      {% endfor %}
     </ul>
-    <h3>Update Z</h3>
-    <p>Sold-out items, clearer reports, and tighter control over who can do what.</p>
-    <ul>
-      <li>Sold-out items show on the menu tiles, with an "only N left" pill when a count is set. Managers can mark an item sold out, or set how many are left, from the products list.</li>
-      <li>Before an order goes onto a table that already has a check, the register asks which check it belongs on. The "Place order" count now counts items, not lines.</li>
-      <li>The register picks its layout from the screen's size and orientation.</li>
-      <li>Owners can limit what each person may do, including who can open the cash drawer, and every settings change is logged. Only a primary owner can give out or extend owner access.</li>
-      <li>Owners choose how totals are rounded, and an order keeps the rounding it was opened with.</li>
-      <li>Every report adds up what each bill actually charged. A new Reports page sits beside the Dashboard, with Products, Payments and Labor moved into it.</li>
-      <li>Customer totals, visits and last visit come from paid bills, and are the same on the list and the detail page.</li>
-      <li>Revenue centers arrive: floor plans, sections and table placements for each area.</li>
-      <li>Prepaid payment methods wait for the final total before they settle.</li>
-      <li>When a bump of several items is refused, the kitchen screen shows one clear message.</li>
-      <li>Live updates back off politely when the server is busy, instead of retrying all at once.</li>
-    </ul>
-    <h3>Update Y</h3>
-    <p>The register, the kitchen and the handheld are easier to use on the screens people actually have.</p>
-    <ul>
-      <li>Search on the register shows its filter chips, a result count and suggestions as you type, on desktop, phones and tablets.</li>
-      <li>Every page has a shortcut list, and the g shortcuts jump between pages. The 0 key adds the tenth menu item.</li>
-      <li>Kitchen tickets keep one fixed size, two rows to a screen. A new "By status" view puts late tickets first, then the ones close to late. When a cook's tap is refused, the screen says why and keeps them signed in.</li>
-      <li>Kitchen tickets and receipts print names with curly quotes and the · dot instead of dropping the line.</li>
-      <li>Guest receipts no longer print a brand line.</li>
-      <li>The handheld for servers, on a landscape tablet, opens items, actions and discounts as a side panel instead of covering the check.</li>
-      <li>New side work lists: tasks are added by hand or from a template for each role, and each person sees their own list.</li>
-      <li>The time clock shows this week and has a form to ask for a fix to a punch.</li>
-      <li>The shift log has its own place in the sidebar.</li>
-      <li>The Roles page shows who can view and who can edit checks. Checks stay open to every role that works with orders.</li>
-      <li>Fixes: open-check cards stop stretching full width, and dashboard cards in a row line up to the same height.</li>
-      <li>Security improvements.</li>
-    </ul>
-    <h3>Update X</h3>
-    <p>Mostly about working faster at the register and in the kitchen, with a few fixes that stop surprises mid-shift.</p>
-    <ul>
-      <li>Search on the register is smarter: type a category, a tag or a price range like $4-6, and the menu narrows as you type.</li>
-      <li>On a keyboard, the register shows its shortcuts after your first key press, and quiet tips in the status line teach the faster way without popping anything up.</li>
-      <li>When you add a round to a check that was already sent, the kitchen ticket shows only the new items.</li>
-      <li>The kitchen screen is easier to read: it counts finished items, says when a ticket has more lines, labels served items, and shows "All caught up" when the board is clear. Cooks can mark an item done across every ticket from the All Day view.</li>
-      <li>New shift log: staff leave handover notes that can name a teammate, and that person can reply. Notes are permanent.</li>
-      <li>Closing the day starts with a check that lists anything still open and explains how the expected cash was worked out.</li>
-      <li>Staff roles show their permissions grouped into plain areas, and every permission change is recorded.</li>
-      <li>The handheld for servers shows "Sent" in its status line instead of covering the screen.</li>
-      <li>Fixes: a wrong clock-in PIN no longer signs anyone out; a table frees up only when its last open check closes; a check closed on another device shows as closed.</li>
-    </ul>
+    {% endfor %}
     <h3>Earlier updates</h3>
     <p>Ten earlier updates, installed from September 25, laid the groundwork: the register, checks, the kitchen screen, printing, roles and reports.</p>
     <h3>By the numbers</h3>
