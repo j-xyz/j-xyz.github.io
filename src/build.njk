@@ -7,6 +7,15 @@ permalink: /build/index.html
 <section class="page-intro accent-ticket">
   <p class="eyebrow">Build / How we work</p><h1>One founder. A team of agents. Everything written down.</h1><p class="lede">We build in the open about how, and carefully about what. One person decides; a team of AI agents, each with one job, specifies, builds, reviews and tests.</p><p class="status">Work in progress</p>
 </section>
+<section class="numbers-strip" aria-label="By the numbers">
+  <p class="eyebrow">By the numbers</p>
+  <ul>
+    <li><strong>{{ numbers.updates }}</strong><span>updates installed since {{ numbers.updatesSince }}</span></li>
+    <li><strong>{{ numbers.features }}</strong><span>new features since {{ numbers.featuresSince }}</span></li>
+    <li><strong>{{ numbers.fixes }}</strong><span>fixes since {{ numbers.featuresSince }}</span></li>
+  </ul>
+  <p class="strip-note">Counted by script on {{ numbers.countedOn }}.</p>
+</section>
 <section class="editorial section">
   <h2>How decisions get made</h2>
   <div class="prose">
@@ -15,21 +24,16 @@ permalink: /build/index.html
 </section>
 <section class="evidence-panel" aria-labelledby="status-title">
   <p class="eyebrow">Where things stand</p><h2 id="status-title">What it does on a shift, in three lists.</h2>
+  <h3 class="built-heading">Built</h3>
+  <ul class="built-list">
+    {% for b in built %}
+    <li class="built-item">
+      <p>{{ b.text }}</p>
+      {% if b.image %}<img class="built-shot" src="{{ b.image }}" alt="{{ b.alt }}" loading="lazy">{% else %}<div class="built-shot built-slot" role="img" aria-label="A screenshot of the installed app goes here"><span>Screenshot coming</span></div>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
   <div class="evidence-grid">
-    <div>
-      <h3>Built</h3>
-      <ul class="status-list">
-        <li>Take orders on a register, an iPad or a phone, and add to a check that has already gone to the kitchen.</li>
-        <li>Send orders to the kitchen screen and to the kitchen and receipt printers. The kitchen sees only what is new.</li>
-        <li>Floor plans by room, with the tables where they really are.</li>
-        <li>Sold-out items, and “only a few left” counts, right on the menu.</li>
-        <li>A time clock with corrections, side work lists, and a shift log for handover notes.</li>
-        <li>Close the day with a check of open checks and the cash you should have.</li>
-        <li>Reports that add up to what each bill actually charged.</li>
-        <li>Roles that say who may do what, with every change on the record.</li>
-        <li>Your records stay on a machine you own. Nothing leaves it unless the owner turns it on.</li>
-      </ul>
-    </div>
     <div>
       <h3>In the works</h3>
       <ul class="status-list">
