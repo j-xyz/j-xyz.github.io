@@ -16,7 +16,7 @@
     "name": "Update Z",
     "intro": "Sold-out items, clearer reports, and tighter control over who can do what.",
     "items": [
-      "Sold-out items show on the menu tiles, with an \"only N left\" pill when a count is set. Managers can mark an item sold out, or set how many are left, from the products list.",
+      "Sold-out items show on the menu tiles, with an “N left” pill when a count is set and a “Running Low” tag. Managers can mark an item sold out, or set how many are left, from the products list.",
       "Before an order goes onto a table that already has a check, the register asks which check it belongs on. The \"Place order\" count now counts items, not lines.",
       "The register picks its layout from the screen's size and orientation.",
       "Owners can limit what each person may do, including who can open the cash drawer, and every settings change is logged. Only a primary owner can give out or extend owner access.",
