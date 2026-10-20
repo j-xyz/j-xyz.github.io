@@ -748,3 +748,5 @@ html[data-theme="dark"] .accent-tiles::after { display: none; }
 .peek-tag { border: 1px solid var(--control-line); border-radius: 999px; font-size: 0.7rem; margin-left: 0.4rem; padding: 0.05rem 0.5rem; white-space: nowrap; }
 .peek-mark { margin: 2rem 0 0; max-width: 11rem; }
 .peek-mark + .peek-grid { margin-top: 1.5rem; }
+.status-list { margin: 0.5rem 0 0; padding-left: 1.1rem; }
+.status-list li { margin: 0 0 0.6rem; }
