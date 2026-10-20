@@ -7,6 +7,15 @@ permalink: /build/index.html
 <section class="page-intro accent-ticket">
   <p class="eyebrow">Build / How we work</p><h1>One founder. A team of agents. Everything written down.</h1><p class="lede">We build in the open about how, and carefully about what. One person decides; a team of AI agents, each with one job, specifies, builds, reviews and tests.</p><p class="status">Work in progress</p>
 </section>
+<section class="numbers-strip" aria-label="By the numbers">
+  <p class="eyebrow">By the numbers</p>
+  <ul>
+    <li><strong>{{ numbers.updates }}</strong><span>updates installed since {{ numbers.updatesSince }}</span></li>
+    <li><strong>{{ numbers.features }}</strong><span>new features since {{ numbers.featuresSince }}</span></li>
+    <li><strong>{{ numbers.fixes }}</strong><span>fixes since {{ numbers.featuresSince }}</span></li>
+  </ul>
+  <p class="strip-note">Counted by script on {{ numbers.countedOn }}.</p>
+</section>
 <section class="editorial section">
   <h2>How decisions get made</h2>
   <div class="prose">
@@ -14,20 +23,71 @@ permalink: /build/index.html
   </div>
 </section>
 <section class="evidence-panel" aria-labelledby="status-title">
-  <p class="eyebrow">Where things stand</p><h2 id="status-title">Said plainly, in three lists.</h2>
+  <p class="eyebrow">Where things stand</p><h2 id="status-title">What it does on a shift, in three lists.</h2>
+  <h3 class="built-heading">Built</h3>
+  <ul class="built-list">
+    {% for b in built %}
+    <li class="built-item{% if not b.images.length %} no-shot{% endif %}">
+      <p>{{ b.text }}</p>
+      {% if b.images.length %}<div class="built-figs">{% for img in b.images %}<figure class="built-fig"><a href="{{ img.light }}" target="_blank" rel="noopener"><img class="built-shot theme-light" src="{{ img.light }}" alt="{{ img.alt }}" loading="lazy"></a><a href="{{ img.dark }}" target="_blank" rel="noopener"><img class="built-shot theme-dark" src="{{ img.dark }}" alt="{{ img.alt }}" loading="lazy"></a><figcaption>The app today</figcaption></figure>{% endfor %}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ul>
   <div class="evidence-grid">
     <div>
-      <h3>Built</h3><p>Optional network features start switched off. Open checks are visible to the whole team. Every figure is computed by code. An assistant that can read, and only read, behind the owner’s own login.</p>
+      <h3>In the works</h3>
+      <ul class="status-list">
+        <li>A new look across the iPad, the phone and the handheld, so a table’s check feels the same wherever you open it.</li>
+        <li>“My checks”: each person’s own checks, handed over cleanly when a shift changes.</li>
+        <li>Seats and split checks, and one dish sent to two kitchen stations.</li>
+        <li>Paid and unpaid breaks on the time clock.</li>
+        <li>A lighter mode for older devices.</li>
+      </ul>
     </div>
     <div>
-      <h3>In testing</h3><p>Smarter search on the register, and shortcuts that match the way people already talk on the floor.</p>
-    </div>
-    <div>
-      <h3>Coming</h3><p>A lighter mode for older devices, sold-out counts shown at the register, and a live view of the tip pool.</p>
+      <h3>Coming</h3>
+      <ul class="status-list">
+        <li>Courses, and a way back when a printer stops mid-service.</li>
+        <li>Approvals from a phone, staff invites, and device settings.</li>
+        <li>Card payments.</li>
+        <li>A live view of the tip pool, so everyone in it sees their share.</li>
+      </ul>
     </div>
   </div>
-  <p class="evidence-footnote">This is an experiment, not a finished product. <a class="text-link" href="/work/">See what is and isn’t established <span aria-hidden="true">↗</span></a></p>
-  <p class="evidence-footnote">See <a class="text-link" href="/whats-new/">what’s new</a> and <a class="text-link" href="/whats-next/">what’s next</a>.</p>
+</section>
+<section class="editorial section" aria-labelledby="latest-title">
+  <h2 id="latest-title">Latest update</h2>
+  <div class="prose">
+    {% set latest = updates | first %}
+    <h3>{{ latest.name }}</h3>
+    <p>{{ latest.intro }}</p>
+    <ul>
+      {% for item in latest.items %}<li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    <p class="status">Older updates</p>
+    {% for u in updates %}{% if not loop.first %}
+    <details class="update-fold">
+      <summary>{{ u.name }}</summary>
+      <p>{{ u.intro }}</p>
+      <ul>
+        {% for item in u.items %}<li>{{ item }}</li>
+        {% endfor %}
+      </ul>
+    </details>
+    {% endif %}{% endfor %}
+  </div>
+</section>
+<section class="editorial section" aria-labelledby="unproven-title">
+  <h2 id="unproven-title">Not proven yet</h2>
+  <div class="prose">
+    <p>This is an experiment, not something to run a live restaurant on yet. Three things we have not proven:</p>
+    <ul class="status-list">
+      <li>That the floor keeps working through a real internet outage. It is built to; we haven't shown it end to end.</li>
+      <li>That several people can change the same check on a busy night without anything going wrong.</li>
+      <li>That it recovers cleanly after a failure, and works with every printer and card reader a restaurant might use.</li>
+    </ul>
+  </div>
 </section>
 <section class="invitation compact">
   <h2>Have a question about how it’s built?</h2><p>Write to us.</p><a class="button" href="mailto:{{ site.email }}">Email {{ site.email }} <span aria-hidden="true">↗</span></a>
