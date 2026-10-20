@@ -27,9 +27,9 @@ permalink: /build/index.html
   <h3 class="built-heading">Built</h3>
   <ul class="built-list">
     {% for b in built %}
-    <li class="built-item">
+    <li class="built-item{% if not b.image %} no-shot{% endif %}">
       <p>{{ b.text }}</p>
-      {% if b.image %}<img class="built-shot" src="{{ b.image }}" alt="{{ b.alt }}" loading="lazy">{% else %}<div class="built-shot built-slot" role="img" aria-label="A screenshot of the installed app goes here"><span>Screenshot coming</span></div>{% endif %}
+      {% if b.image %}<img class="built-shot" src="{{ b.image }}" alt="{{ b.alt }}" loading="lazy">{% endif %}
     </li>
     {% endfor %}
   </ul>

@@ -770,3 +770,4 @@ html[data-theme="dark"] .accent-tiles::after { display: none; }
   .built-item { grid-template-columns: 1fr; }
   .built-shot { max-width: 20rem; }
 }
+.built-item.no-shot { grid-template-columns: 1fr; }
