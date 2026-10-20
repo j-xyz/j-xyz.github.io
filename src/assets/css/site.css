@@ -771,3 +771,16 @@ html[data-theme="dark"] .accent-tiles::after { display: none; }
   .built-shot { max-width: 20rem; }
 }
 .built-item.no-shot { grid-template-columns: 1fr; }
+.built-item { grid-template-columns: minmax(0, 1fr) minmax(0, 15rem); }
+.built-item.no-shot { grid-template-columns: 1fr; }
+.built-fig { margin: 0; }
+.built-fig a { display: block; }
+.built-fig figcaption { color: var(--muted); font-size: 0.75rem; margin-top: 0.35rem; }
+.built-fig .theme-dark, .built-fig a:has(.theme-dark) { display: none; }
+:root[data-theme="dark"] .built-fig a:has(.theme-light) { display: none; }
+:root[data-theme="dark"] .built-fig a:has(.theme-dark) { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .built-fig a:has(.theme-light) { display: none; }
+  :root:not([data-theme="light"]) .built-fig a:has(.theme-dark) { display: block; }
+}
+@media (max-width: 760px) { .built-item, .built-item.no-shot { grid-template-columns: 1fr; } .built-fig { max-width: 20rem; } }

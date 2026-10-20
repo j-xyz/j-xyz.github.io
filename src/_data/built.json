@@ -6,8 +6,11 @@
   },
   {
     "text": "Send orders to the kitchen screen and to the kitchen and receipt printers. The kitchen sees only what is new.",
-    "image": null,
-    "alt": null
+    "image": {
+      "light": "/assets/built/kitchen-light.png",
+      "dark": "/assets/built/kitchen-dark.png"
+    },
+    "alt": "The kitchen screen: order tickets in columns, each with its items and a Bump button"
   },
   {
     "text": "Floor plans by room, with the tables where they really are.",
@@ -16,8 +19,11 @@
   },
   {
     "text": "Sold-out items marked right on the menu, with the count left (“3 left”) and a “Running Low” flag.",
-    "image": null,
-    "alt": null
+    "image": {
+      "light": "/assets/built/sold-out-light.png",
+      "dark": "/assets/built/sold-out-dark.png"
+    },
+    "alt": "The menu on a phone: some items marked Sold out, one marked 3 left, one marked Running Low"
   },
   {
     "text": "A time clock with corrections, side work lists, and a shift log for handover notes.",
@@ -31,13 +37,19 @@
   },
   {
     "text": "Reports that add up to what each bill actually charged.",
-    "image": null,
-    "alt": null
+    "image": {
+      "light": "/assets/built/reports-light.png",
+      "dark": "/assets/built/reports-dark.png"
+    },
+    "alt": "The Products report: items, quantities and paid subtotals with a total"
   },
   {
     "text": "Roles that say who may do what, with every change on the record.",
-    "image": null,
-    "alt": null
+    "image": {
+      "light": "/assets/built/change-log-light.png",
+      "dark": "/assets/built/change-log-dark.png"
+    },
+    "alt": "The change log: who changed what and when, with before-and-after detail"
   },
   {
     "text": "Your records stay on a machine you own. Nothing leaves it unless the owner turns it on.",

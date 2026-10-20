@@ -29,7 +29,7 @@ permalink: /build/index.html
     {% for b in built %}
     <li class="built-item{% if not b.image %} no-shot{% endif %}">
       <p>{{ b.text }}</p>
-      {% if b.image %}<img class="built-shot" src="{{ b.image }}" alt="{{ b.alt }}" loading="lazy">{% endif %}
+      {% if b.image %}<figure class="built-fig"><a href="{{ b.image.light }}" target="_blank" rel="noopener"><img class="built-shot theme-light" src="{{ b.image.light }}" alt="{{ b.alt }}" loading="lazy"></a><a href="{{ b.image.dark }}" target="_blank" rel="noopener"><img class="built-shot theme-dark" src="{{ b.image.dark }}" alt="{{ b.alt }}" loading="lazy"></a><figcaption>The app today</figcaption></figure>{% endif %}
     </li>
     {% endfor %}
   </ul>
