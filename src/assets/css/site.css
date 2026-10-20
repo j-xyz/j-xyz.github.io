@@ -735,3 +735,16 @@ html[data-theme="dark"] .accent-tiles::after { display: none; }
 @media (max-width: 1279px) {
   .accent-ticket::after, .accent-tiles::after { display: none; }
 }
+
+.peek-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+.peek-frame { aspect-ratio: auto; }
+.peek-slot .peek-dark { display: none; }
+:root[data-theme="dark"] .peek-slot .peek-light { display: none; }
+:root[data-theme="dark"] .peek-slot .peek-dark { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .peek-slot .peek-light { display: none; }
+  :root:not([data-theme="light"]) .peek-slot .peek-dark { display: block; }
+}
+.peek-tag { border: 1px solid var(--control-line); border-radius: 999px; font-size: 0.7rem; margin-left: 0.4rem; padding: 0.05rem 0.5rem; white-space: nowrap; }
+.peek-mark { margin: 2rem 0 0; max-width: 11rem; }
+.peek-mark + .peek-grid { margin-top: 1.5rem; }
