@@ -1,5 +1,20 @@
 [
   {
+    "name": "The October 21 update",
+    "intro": "Breaks on the time clock, open prices, and the floor on more screens.",
+    "items": [
+      "The time clock has breaks: Meal (unpaid, 30 minutes) and Rest (paid, 10 minutes). Labor reports count paid hours.",
+      "Servers can clock in without a PIN within 5 minutes of signing in.",
+      "Open-priced items: staff type the price on every ordering screen, up to a maximum the owner sets, with a PIN check when the order is sent.",
+      "Landscape iPads get the new register layout, with the Checks list and a floor screen that copes with crowded floors.",
+      "On the desktop register, in stores with tables, press f to swap the products for the floor, find a table or check, and preview its check before opening it.",
+      "On landscape iPads and phones, your name, clock in or out, breaks and log out sit at the bottom of the Start menu.",
+      "Servers see and tick off their own side work on the handheld.",
+      "On the kitchen screen's bump bar, number keys pick a ticket, Enter bumps it and Backspace recalls it.",
+      "Each kitchen printer prints a set number of copies, from 1 to 9."
+    ]
+  },
+  {
     "name": "The October 15 update",
     "intro": "A calmer look across the app, and the register on more screens.",
     "items": [
