@@ -1,8 +1,7 @@
 {
-  "countedOn": "2026-11-08",
-  "updates": 15,
-  "features": 139,
-  "fixes": 67,
+  "countedOn": "2026-11-14",
+  "updates": 16,
+  "changes": 390,
   "updatesSince": "September 25",
-  "featuresSince": "September 23"
+  "changesSince": "September 23"
 }

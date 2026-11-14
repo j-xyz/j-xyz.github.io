@@ -1,5 +1,26 @@
 [
   {
+    "name": "The November update",
+    "intro": "Checks that move with the service, the phone as a register, and a kitchen and printers that recover.",
+    "items": [
+      "Hand a check to someone else, or move it to another table or revenue center.",
+      "On an iPad, merge checks and move items between them.",
+      "Seats on each line of a check.",
+      "Products with variants, such as a glass or a bottle of the house red.",
+      "Discount presets the owner sets up, next to open discounts.",
+      "The phone gets the register and a floor screen, and works on phones as small as 320 px.",
+      "After sending an order on an iPad, choose what happens next. A check switcher and check labels keep several checks apart.",
+      "Search the register and admin with ⌘K, with a suggestion strip on touch screens.",
+      "Section plans for each shift, reviewed before they’re saved, and one active floor plan per revenue center.",
+      "Menus on a schedule, and courses you can rename.",
+      "Invite staff by link. The change log is written in plain words.",
+      "On the kitchen screen: bump mode, bump-bar keys learned per device, and a key legend.",
+      "When a ticket doesn’t print, it’s held, to print again or send to another printer. A printer guide walks through the checks.",
+      "Report figures in the logbook, for people allowed to see reports.",
+      "Audit history is kept through a database import."
+    ]
+  },
+  {
     "name": "The October 21 update",
     "intro": "Breaks on the time clock, open prices, and the floor on more screens.",
     "items": [

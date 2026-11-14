@@ -4,11 +4,27 @@
     "images": []
   },
   {
+    "text": "Hand a check to someone else, or move it to another table or revenue center. On an iPad, merge checks and move items between them.",
+    "images": []
+  },
+  {
+    "text": "Seats on each line of a check, products with variants, and discount presets.",
+    "images": []
+  },
+  {
+    "text": "Search the register and admin with ⌘K, and menus that change on a schedule.",
+    "images": []
+  },
+  {
     "text": "Send orders to the kitchen screen and to the kitchen and receipt printers. The kitchen sees only what is new.",
     "images": []
   },
   {
-    "text": "Floor plans by room, with the tables where they really are.",
+    "text": "When a ticket doesn’t print, it’s held, to print again or send to another printer.",
+    "images": []
+  },
+  {
+    "text": "Floor plans by room on the register, the iPad and the phone, with section plans for each shift.",
     "images": []
   },
   {
@@ -16,7 +32,7 @@
     "images": []
   },
   {
-    "text": "A time clock with corrections and paid and unpaid breaks, side work lists, and a shift log for handover notes.",
+    "text": "A time clock with corrections and paid and unpaid breaks, side work lists, and a shift log for handover notes, with report figures for people allowed to see reports.",
     "images": []
   },
   {
@@ -29,6 +45,10 @@
   },
   {
     "text": "Roles that say who may do what, with every change on the record.",
+    "images": []
+  },
+  {
+    "text": "Invite staff by link.",
     "images": []
   },
   {
