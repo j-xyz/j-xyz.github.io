@@ -16,7 +16,7 @@
     "images": []
   },
   {
-    "text": "Send orders to the kitchen screen and to the kitchen and receipt printers. The kitchen sees only what is new.",
+    "text": "Send orders to the kitchen screen and to the kitchen and receipt printers, with an item going to more than one station when needed. The kitchen sees only what is new.",
     "images": []
   },
   {
@@ -40,7 +40,7 @@
     "images": []
   },
   {
-    "text": "Reports that add up to what each bill actually charged.",
+    "text": "Reports that add up to what each bill actually charged, including taxes, sales by hour, and X and Z reports.",
     "images": []
   },
   {
