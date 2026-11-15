@@ -1,10 +1,11 @@
 [
   {
-    "name": "The November update",
+    "name": "The November 15 update",
     "intro": "Checks that move with the service, the phone as a register, and a kitchen and printers that recover.",
     "items": [
-      "Hand a check to someone else, or move it to another table or revenue center.",
-      "On an iPad, merge checks and move items between them, with a search to find the other check.",
+      "On an iPad in landscape, hand a check to someone else, or move it to another table or revenue center.",
+      "On an iPad in landscape, merge checks and move items between them, with a search to find the other check.",
+      "On a 13-inch iPad, handing over, moving and merging checks show for now only with the register set to the Tablet layout.",
       "Seats on each line of a check.",
       "Products with variants, such as a glass or a bottle of the house red.",
       "Discount presets: the owner sets them up in Settings, and staff pick one wherever they could type a discount, next to the open discount. A sent check with no table can take a discount too.",
