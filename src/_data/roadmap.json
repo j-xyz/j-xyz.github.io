@@ -1,0 +1,32 @@
+{
+  "inWorks": [
+    "Custom roles that take orders on the register.",
+    "Staff sales that follow a check when it’s handed to someone else.",
+    "“My checks”: each person’s own checks, handed over cleanly when a shift changes.",
+    "Seats shown on the kitchen screen.",
+    "A notification center."
+  ],
+  "coming": [
+    "Approvals from a manager’s phone.",
+    "Kitchen alerts when food is ready.",
+    "Sizes and price levels.",
+    "Ticket print options: an expo ticket, and a “goes with” line on kitchen tickets."
+  ],
+  "notScheduled": "card payments, and a live view of the tip pool so everyone in it sees their share.",
+  "planned": [
+    "Split checks, and paying one check with more than one tender",
+    "Courses, with hold and fire",
+    "Tax exemptions and service fees",
+    "Reasons recorded on voids, cancels and discounts",
+    "Finer permissions for each setup screen",
+    "Tableside that works the same way as the register",
+    "More report screens, and reports and exports that always agree"
+  ],
+  "ideas": [
+    "Two devices working on one check at once",
+    "Connections to accounting tools and to delivery orders",
+    "Receipt templates",
+    "Easier setup: staff import and a go-live checklist",
+    "Labor rules"
+  ]
+}
