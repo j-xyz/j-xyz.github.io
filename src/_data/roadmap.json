@@ -13,13 +13,16 @@
     "Ticket print options: an expo ticket, and a “goes with” line on kitchen tickets."
   ],
   "notScheduled": "card payments, and a live view of the tip pool so everyone in it sees their share.",
-  "planned": [
-    "Split checks, and paying one check with more than one tender",
+  "next": [
+    "Seats on every device, and kitchen tickets in seat order",
     "Courses, with hold and fire",
-    "Tax exemptions and service fees",
+    "Split checks, and paying one check with more than one tender",
+    "Tableside that works the same way as the register",
+    "Tax exemptions and service fees"
+  ],
+  "planned": [
     "Reasons recorded on voids, cancels and discounts",
     "Finer permissions for each setup screen",
-    "Tableside that works the same way as the register",
     "More report screens, and reports and exports that always agree"
   ],
   "ideas": [
