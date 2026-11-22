@@ -5,36 +5,37 @@ description: "What we are working on and thinking about. Plans, not promises."
 permalink: /whats-next/index.html
 ---
 <section class="page-intro">
-  <p class="eyebrow">Plans</p><h1>What's next</h1><p class="lede">What we're working on and thinking about. These are plans, not promises, and they carry no dates. The first list is the order we are working in. Plans change as we learn.</p>
+  <p class="eyebrow">Plans</p><h1>What's next</h1><p class="lede">What we're working on and thinking about. These are plans, not promises, and they carry no dates. Plans change as we learn. What already works is on <a href="/build/">the build page</a>.</p>
 </section>
 <section class="editorial section">
   <div class="prose">
-    <h3>In the order we're building them</h3>
-    <ol>
-      <li>The new look across the iPad, the phone and the handheld: floor screens, a quick way to move between checks, saved section plans, and "Send" that works the same everywhere</li>
-      <li>"My checks": each person's own checks, handed over cleanly</li>
-      <li>Seats and split checks, with one item sent to two kitchen stations</li>
-      <li>Courses, with recovery when a printer stops mid-service</li>
-      <li>Approvals from a phone, staff invites, and device settings</li>
-      <li>Card payments</li>
-    </ol>
-    <h3>Also planned</h3>
+    <h3>In the works</h3>
     <ul>
-      <li>Two devices working on one check at once</li>
-      <li>Named discounts staff can tap</li>
-      <li>Notes and labels on a check that reach the kitchen</li>
-      <li>Moving items and checks between tables</li>
-      <li>Reasons recorded on voids, cancels and discounts</li>
-      <li>Connections to accounting tools and to delivery orders</li>
-      <li>Finer permissions for each setup screen</li>
+      {% for item in roadmap.inWorks %}<li>{{ item }}</li>
+      {% endfor %}
     </ul>
-    <h3>Later: ideas</h3>
+    <h3>Coming</h3>
     <ul>
-      <li>Menus and prices that change by time of day</li>
-      <li>Tax-exempt checks</li>
-      <li>Receipt templates</li>
-      <li>Easier setup: staff import and a go-live checklist</li>
-      <li>Labor rules</li>
+      {% for item in roadmap.coming %}<li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    <h3>Next</h3>
+    <p>The next big features, in the order we plan to build them. The first three go together.</p>
+    <ol>
+      {% for item in roadmap.next %}<li>{{ item }}</li>
+      {% endfor %}
+    </ol>
+    <h3>Planned, not scheduled yet</h3>
+    <ul>
+      <li>Card payments</li>
+      <li>A live view of the tip pool, so everyone in it sees their share</li>
+      {% for item in roadmap.planned %}<li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    <h3>Ideas</h3>
+    <ul>
+      {% for item in roadmap.ideas %}<li>{{ item }}</li>
+      {% endfor %}
     </ul>
   </div>
 </section>

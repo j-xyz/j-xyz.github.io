@@ -36,22 +36,17 @@ permalink: /build/index.html
     <div>
       <h3>In the works</h3>
       <ul class="status-list">
-        <li>Custom roles that take orders on the register.</li>
-        <li>Staff sales that follow a check when it’s handed to someone else.</li>
-        <li>“My checks”: each person’s own checks, handed over cleanly when a shift changes.</li>
-        <li>Seats shown on the kitchen screen.</li>
-        <li>A notification center.</li>
+        {% for item in roadmap.inWorks %}<li>{{ item }}</li>
+        {% endfor %}
       </ul>
     </div>
     <div>
       <h3>Coming</h3>
       <ul class="status-list">
-        <li>Approvals from a manager’s phone.</li>
-        <li>Kitchen alerts when food is ready.</li>
-        <li>Sizes and price levels.</li>
-        <li>Ticket print options: an expo ticket, and a “goes with” line on kitchen tickets.</li>
+        {% for item in roadmap.coming %}<li>{{ item }}</li>
+        {% endfor %}
       </ul>
-      <p class="status">Not scheduled yet: card payments, and a live view of the tip pool so everyone in it sees their share.</p>
+      <p class="status">Not scheduled yet: {{ roadmap.notScheduled }}</p>
     </div>
   </div>
 </section>
