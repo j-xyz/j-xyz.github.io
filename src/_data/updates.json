@@ -1,5 +1,14 @@
 [
   {
+    "name": "The November 24 update",
+    "intro": "Seats on the register, the large tablet and the phone, and a manager PIN for the cash drawer.",
+    "items": [
+      "Seats on the register, the large tablet and the phone, as well as the iPad, for dine-in checks when the restaurant asks for seats. Add an item to a seat, or move it to another. On the phone, change the seat of a line that has already gone to the kitchen, without reprinting it.",
+      "Opening a managed cash drawer asks for a manager PIN, and the change log lists each opening.",
+      "On an iPad or a phone, holding a menu tile no longer opens a menu or adds the item twice. On those screens, only owners and managers can mark an item sold out, and they do it in Products. On the register, right-click a tile for quick options."
+    ]
+  },
+  {
     "name": "The November 22 update",
     "intro": "Sizes on the menu, check actions on every iPad, and a bell for print problems.",
     "items": [
