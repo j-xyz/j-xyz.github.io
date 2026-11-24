@@ -1,5 +1,19 @@
 [
   {
+    "name": "The November 22 update",
+    "intro": "Sizes on the menu, check actions on every iPad, and a bell for print problems.",
+    "items": [
+      "Sizes on a product, such as a glass or a bottle of the house red, each with its own price. The owner adds them in Products. The register asks which size on the desktop, iPad and phone, and the bill, receipt and kitchen ticket show it. Each size can have its own barcode.",
+      "On any iPad, in either orientation and on the 13-inch too, hand a check to someone else, move it to another table, or merge checks and move items between them, from the check’s side panel.",
+      "A bell on the register counts print problems and lists them, with what you can do about each one right in the list.",
+      "When a check is handed to someone else, its payment counts toward the sales of whoever held it when it was paid.",
+      "On an iPad in portrait, Discount opens the presets.",
+      "Seats show on the kitchen screen for dine-in checks when the restaurant asks for seats.",
+      "The X report shows cash sales before refunds, with a line for cash refunds.",
+      "Smaller fixes: check headers stay on one line, the 13-inch iPad floor shows one person badge per table, and long order numbers fit on kitchen tiles."
+    ]
+  },
+  {
     "name": "The November 15 update",
     "intro": "Checks that move with the service, the phone as a register, and a kitchen and printers that recover.",
     "items": [
@@ -7,7 +21,6 @@
       "On an iPad in landscape, merge checks and move items between them, with a search to find the other check.",
       "On a 13-inch iPad, handing over, moving and merging checks show for now only with the register set to the Tablet layout.",
       "Seats on each line of a check.",
-      "Products with variants, such as a glass or a bottle of the house red.",
       "Discount presets: the owner sets them up in Settings, and staff pick one wherever they could type a discount, next to the open discount. A sent check with no table can take a discount too.",
       "The phone gets the register and a floor screen, and works on phones as small as 320 px.",
       "After sending an order on an iPad, choose what happens next. A check switcher and check labels keep several checks apart.",
