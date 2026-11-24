@@ -4,7 +4,7 @@ Implemented locally, uncommitted. No source, theme, template, configuration, tes
 
 ## Scope and preservation
 
-Read repository AGENTS.md and the explicitly requested security-audit and source-check skills under `/Users/jane/jxyz/maeve/skills/`, including the dependency safety policy. The explicit user dispatch authorized local installs; network/listener escalation controls were respected.
+Read repository AGENTS.md and the explicitly requested security-audit and source-check skills under `<local path>`, including the dependency safety policy. The explicit user dispatch authorized local installs; network/listener escalation controls were respected.
 
 Initial staged and unstaged status were clean at `1767f7537a57eb2b30a3a2b8e196f4d8160ceb6a`. The existing theme work and test script were already present. Captured source, tests, manifests, runtime instructions and installed dependencies at `/private/tmp/swiftlabs-dependency-20260920/baseline` before installation; checked shared files against that snapshot immediately before edits. Final source/test hashes still match. No overlapping writes were observed. Nothing was staged.
 

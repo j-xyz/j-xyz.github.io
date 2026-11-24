@@ -10,7 +10,7 @@ Implemented the accepted overhaul across all five pages, shared layout/site data
 | --- | --- |
 | `PATH=/private/tmp/node-v20.20.2-darwin-arm64/bin:$PATH npm run build` | Pass, Eleventy 3.1.2; four copied assets and six generated files. Repeated after source formatting. |
 | `npm run dev -- --port=8080` with the same PATH | Pass after user-authorized retry; local preview at http://localhost:8080/. Initial sandbox bind failed and the first escalation was declined. The user then requested a retry, which was approved. |
-| `python3 docs/planning/site-overhaul/verify-static.py` | Pass. Five HTML pages: one H1/main each, unique IDs, valid local destinations/anchors, descriptions and canonical URLs. Person JSON parses. Manifest/domain align. Sitemap contains exactly four content routes. |
+| `python3 docs/archive/site-overhaul/verify-static.py` | Pass. Five HTML pages: one H1/main each, unique IDs, valid local destinations/anchors, descriptions and canonical URLs. Person JSON parses. Manifest/domain align. Sitemap contains exactly four content routes. |
 | `git diff --check` | Pass. |
 | Desktop rendering | Inspected all five pages at 1440×1000 in the Codex in-app browser. Saved viewport screenshots. Checked lower homepage/About content and restaurant evidence layout. |
 | Mobile rendering | Inspected all five pages at 390×844. Restaurant questions/evidence and homepage field note/principles additionally inspected below the fold. |
@@ -30,7 +30,7 @@ Raw results: [static-checks.json](static-checks.json), [browser-checks.json](bro
 - The browser controls expose no reduced-motion emulation. The stylesheet’s no-motion behavior was inspected, but toggling the OS preference was not performed.
 - Network request tracing was unavailable in the supported browser scope. Asset/stylesheet/script inspection found no external loads; this is not a captured network trace.
 - No physical mobile devices, screen-reader session or cross-browser matrix was exercised. Mobile evidence is viewport testing.
-- FloCafe remote fork capability and public availability remain unverified; the site intentionally makes no stronger claim. Application tests were outside the site task.
+- The upstream fork capability and public availability remain unverified; the site intentionally makes no stronger claim. Application tests were outside the site task.
 - A full-page screenshot attempt produced stitching artifacts. Evidence files were replaced with viewport captures; no stitched image is offered as layout evidence.
 
 These limits prevent describing the work as a comprehensive accessibility certification. No known rendering or static validation failure remains from the checks performed.
