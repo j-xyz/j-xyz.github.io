@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>What&#39;s next | Jane Swift · swiftlabs.xyz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="What we are working on and thinking about. Plans, not promises.">
+    <link rel="canonical" href="https://swiftlabs.xyz/whats-next/">
+    <meta property="og:title" content="What&#39;s next | Jane Swift">
+    <meta property="og:description" content="What we are working on and thinking about. Plans, not promises.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://swiftlabs.xyz/whats-next/">
+    <meta name="twitter:card" content="summary">
+    <meta id="theme-color-light" name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+    <meta id="theme-color-dark" name="theme-color" content="#141518" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
+    <script>(() => {
+  const key = 'swiftlabs-theme';
+  const root = document.documentElement;
+  const system = window.matchMedia('(prefers-color-scheme: dark)');
+  const valid = (value) => value === 'light' || value === 'dark';
+  let preference = null;
+  let button;
+
+  try {
+    const saved = window.localStorage.getItem(key);
+    if (valid(saved)) preference = saved;
+  } catch {
+    // The switch remains usable when browser storage is unavailable.
+  }
+
+  function apply() {
+    const theme = preference || (system.matches ? 'dark' : 'light');
+    root.dataset.theme = theme;
+    document.getElementById('theme-color-light').media = theme === 'light' ? 'all' : 'not all';
+    document.getElementById('theme-color-dark').media = theme === 'dark' ? 'all' : 'not all';
+    if (button) {
+      const label = `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`;
+      button.setAttribute('aria-label', label);
+      button.setAttribute('title', label);
+    }
+  }
+
+  apply();
+  system.addEventListener('change', apply);
+  window.addEventListener('storage', (event) => {
+    if (event.key !== key && event.key !== null) return;
+    preference = valid(event.newValue) ? event.newValue : null;
+    apply();
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    button = document.getElementById('theme-toggle');
+    if (!button) return;
+    apply();
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      preference = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      apply();
+      try {
+        window.localStorage.setItem(key, preference);
+      } catch {
+        // Keep the chosen theme for this page even if it cannot be saved.
+      }
+    });
+  });
+})();
+</script>
+    
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <script src="/assets/js/header.js" defer></script>
+    
+    <link rel="manifest" href="/site.webmanifest">
+    
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header-inner site-shell">
+        <div class="site-identity">
+          <a class="brand" href="/" aria-label="Jane Swift — home">
+            <span class="brand-name">Jane Swift</span>
+          </a>
+          <div class="brand-details">
+            <span class="brand-domain">swiftlabs.xyz</span>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme" hidden>
+              <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+              </svg>
+              <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          
+          <a href="/">home</a>
+          
+          <a href="/about/">about</a>
+          
+          <a href="/work/">work</a>
+          
+          <a href="/build/">build</a>
+          
+          <a href="/contact/">contact</a>
+          
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="site-shell" tabindex="-1">
+      <section class="page-intro">
+  <p class="eyebrow">Plans</p><h1>What's next</h1><p class="lede">What we're working on and thinking about. These are plans, not promises, and they carry no dates. Plans change as we learn. What already works is on <a href="/build/">the build page</a>.</p>
+</section>
+<section class="editorial section">
+  <div class="prose">
+    <h3>In the works</h3>
+    <ul>
+      <li>Custom roles that take orders on the register.</li>
+      <li>Staff sales that follow a check when it’s handed to someone else.</li>
+      <li>“My checks”: each person’s own checks, handed over cleanly when a shift changes.</li>
+      <li>Seats shown on the kitchen screen.</li>
+      <li>A notification center.</li>
+      
+    </ul>
+    <h3>Coming</h3>
+    <ul>
+      <li>Approvals from a manager’s phone.</li>
+      <li>Kitchen alerts when food is ready.</li>
+      <li>Sizes and price levels.</li>
+      <li>Ticket print options: an expo ticket, and a “goes with” line on kitchen tickets.</li>
+      
+    </ul>
+    <h3>Next</h3>
+    <p>The next big features, in the order we plan to build them. The first three go together.</p>
+    <ol>
+      <li>Seats on every device, and kitchen tickets in seat order</li>
+      <li>Courses, with hold and fire</li>
+      <li>Split checks, and paying one check with more than one tender</li>
+      <li>Tableside that works the same way as the register</li>
+      <li>Tax exemptions and service fees</li>
+      
+    </ol>
+    <h3>Planned, not scheduled yet</h3>
+    <ul>
+      <li>Card payments</li>
+      <li>A live view of the tip pool, so everyone in it sees their share</li>
+      <li>Reasons recorded on voids, cancels and discounts</li>
+      <li>Finer permissions for each setup screen</li>
+      <li>More report screens, and reports and exports that always agree</li>
+      
+    </ul>
+    <h3>Ideas</h3>
+    <ul>
+      <li>Two devices working on one check at once</li>
+      <li>Connections to accounting tools and to delivery orders</li>
+      <li>Receipt templates</li>
+      <li>Easier setup: staff import and a go-live checklist</li>
+      <li>Labor rules</li>
+      
+    </ul>
+  </div>
+</section>
+
+    </main>
+    <footer class="site-footer site-shell">
+      <div><a class="footer-name" href="/">Jane Swift</a><p>Computing, on human terms.</p></div>
+      <div><a href="mailto:hello@swiftlabs.xyz">hello@swiftlabs.xyz</a><p>New York, NY <span aria-hidden="true">·</span> swiftlabs.xyz</p></div>
+    </footer>
+  </body>
+</html>

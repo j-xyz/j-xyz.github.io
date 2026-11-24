@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Build | Jane Swift · swiftlabs.xyz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How the work gets built: one founder, a team of AI agents, and every decision written down.">
+    <link rel="canonical" href="https://swiftlabs.xyz/build/">
+    <meta property="og:title" content="Build | Jane Swift">
+    <meta property="og:description" content="How the work gets built: one founder, a team of AI agents, and every decision written down.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://swiftlabs.xyz/build/">
+    <meta name="twitter:card" content="summary">
+    <meta id="theme-color-light" name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+    <meta id="theme-color-dark" name="theme-color" content="#141518" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
+    <script>(() => {
+  const key = 'swiftlabs-theme';
+  const root = document.documentElement;
+  const system = window.matchMedia('(prefers-color-scheme: dark)');
+  const valid = (value) => value === 'light' || value === 'dark';
+  let preference = null;
+  let button;
+
+  try {
+    const saved = window.localStorage.getItem(key);
+    if (valid(saved)) preference = saved;
+  } catch {
+    // The switch remains usable when browser storage is unavailable.
+  }
+
+  function apply() {
+    const theme = preference || (system.matches ? 'dark' : 'light');
+    root.dataset.theme = theme;
+    document.getElementById('theme-color-light').media = theme === 'light' ? 'all' : 'not all';
+    document.getElementById('theme-color-dark').media = theme === 'dark' ? 'all' : 'not all';
+    if (button) {
+      const label = `Switch to ${theme === 'dark' ? 'light' : 'dark'} theme`;
+      button.setAttribute('aria-label', label);
+      button.setAttribute('title', label);
+    }
+  }
+
+  apply();
+  system.addEventListener('change', apply);
+  window.addEventListener('storage', (event) => {
+    if (event.key !== key && event.key !== null) return;
+    preference = valid(event.newValue) ? event.newValue : null;
+    apply();
+  });
+
+  document.addEventListener('DOMContentLoaded', () => {
+    button = document.getElementById('theme-toggle');
+    if (!button) return;
+    apply();
+    button.hidden = false;
+    button.addEventListener('click', () => {
+      preference = root.dataset.theme === 'dark' ? 'light' : 'dark';
+      apply();
+      try {
+        window.localStorage.setItem(key, preference);
+      } catch {
+        // Keep the chosen theme for this page even if it cannot be saved.
+      }
+    });
+  });
+})();
+</script>
+    
+    <link rel="stylesheet" href="/assets/css/site.css">
+    <script src="/assets/js/header.js" defer></script>
+    
+    <link rel="manifest" href="/site.webmanifest">
+    
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="site-header-inner site-shell">
+        <div class="site-identity">
+          <a class="brand" href="/" aria-label="Jane Swift — home">
+            <span class="brand-name">Jane Swift</span>
+          </a>
+          <div class="brand-details">
+            <span class="brand-domain">swiftlabs.xyz</span>
+            <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch theme" hidden>
+              <svg class="theme-icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" />
+              </svg>
+              <svg class="theme-icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5a8.5 8.5 0 1 0 10.7 10.7Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <nav class="site-nav" aria-label="Primary">
+          
+          <a href="/">home</a>
+          
+          <a href="/about/">about</a>
+          
+          <a href="/work/">work</a>
+          
+          <a href="/build/" aria-current="page">build</a>
+          
+          <a href="/contact/">contact</a>
+          
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="site-shell" tabindex="-1">
+      <section class="page-intro accent-ticket">
+  <p class="eyebrow">Build / How we work</p><h1>One founder. A team of agents. Everything written down.</h1><p class="lede">We build in the open about how, and carefully about what. One person decides; a team of AI agents, each with one job, specifies, builds, reviews and tests.</p><p class="status">Work in progress</p>
+</section>
+<section class="numbers-strip" aria-label="By the numbers">
+  <p class="eyebrow">By the numbers</p>
+  <ul>
+    <li><strong>16</strong><span>updates installed since September 25</span></li>
+    <li><strong>401</strong><span>changes in those updates since September 23</span></li>
+  </ul>
+  <p class="strip-note">Counted by script on 2026-11-15: installed updates, and the pull requests merged into them.</p>
+</section>
+<section class="editorial section">
+  <h2>How decisions get made</h2>
+  <div class="prose">
+    <p>The founder decides what gets built. Each decision is recorded in her own words, so there is always a plain answer to “why is it like this?”</p><p>Nothing ships on a summary. Money, access and tax work gets a security review before it merges, and the founder installs each build herself, with a way back ready.</p>
+  </div>
+</section>
+<section class="evidence-panel" aria-labelledby="status-title">
+  <p class="eyebrow">Where things stand</p><h2 id="status-title">What it does on a shift, in three lists.</h2>
+  <h3 class="built-heading">Built</h3>
+  <ul class="built-list">
+    
+    <li class="built-item no-shot">
+      <p>Take orders on a register, an iPad or a phone, and add to a check that has already gone to the kitchen.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>On an iPad in landscape, hand a check to someone else, move it to another table or revenue center, or merge checks and move items between them (on a 13-inch iPad, for now, in the Tablet layout).</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>Seats on each line of a check, products with variants, and discount presets.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>Search the register and admin with ⌘K, and menus that change on a schedule.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>Send orders to the kitchen screen and to the kitchen and receipt printers, with an item going to more than one station when needed. The kitchen sees only what is new.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>When a ticket doesn’t print, it’s held, to print again or send to another printer.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>Floor plans by room on the register, the iPad and the phone, with section plans for each shift.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>Sold-out items marked right on the menu, with the count left (“3 left”) and a “Running Low” flag.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>A time clock with corrections and paid and unpaid breaks, side work lists, and a shift log for handover notes, with report figures for people allowed to see reports.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>Close the day with a check of open checks and the cash you should have.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>Reports that add up to what each bill actually charged, including taxes, sales by hour, and X and Z reports.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>Roles that say who may do what, with every change on the record.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>Invite staff by link.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>A lighter mode for older devices.</p>
+      
+    </li>
+    
+    <li class="built-item no-shot">
+      <p>Your records are kept on your own machine. Cloud services, usage reports and Google Drive backups stay off unless you turn them on.</p>
+      
+    </li>
+    
+  </ul>
+  <div class="evidence-grid">
+    <div>
+      <h3>In the works</h3>
+      <ul class="status-list">
+        <li>Custom roles that take orders on the register.</li>
+        <li>Staff sales that follow a check when it’s handed to someone else.</li>
+        <li>“My checks”: each person’s own checks, handed over cleanly when a shift changes.</li>
+        <li>Seats shown on the kitchen screen.</li>
+        <li>A notification center.</li>
+        
+      </ul>
+    </div>
+    <div>
+      <h3>Coming</h3>
+      <ul class="status-list">
+        <li>Approvals from a manager’s phone.</li>
+        <li>Kitchen alerts when food is ready.</li>
+        <li>Sizes and price levels.</li>
+        <li>Ticket print options: an expo ticket, and a “goes with” line on kitchen tickets.</li>
+        
+      </ul>
+      <p class="status">Not scheduled yet: card payments, and a live view of the tip pool so everyone in it sees their share.</p>
+    </div>
+  </div>
+</section>
+<section class="editorial section" aria-labelledby="latest-title">
+  <h2 id="latest-title">Latest update</h2>
+  <div class="prose">
+    
+    <h3>The November 15 update</h3>
+    <p>Checks that move with the service, the phone as a register, and a kitchen and printers that recover.</p>
+    <ul>
+      <li>On an iPad in landscape, hand a check to someone else, or move it to another table or revenue center.</li>
+      <li>On an iPad in landscape, merge checks and move items between them, with a search to find the other check.</li>
+      <li>On a 13-inch iPad, handing over, moving and merging checks show for now only with the register set to the Tablet layout.</li>
+      <li>Seats on each line of a check.</li>
+      <li>Products with variants, such as a glass or a bottle of the house red.</li>
+      <li>Discount presets: the owner sets them up in Settings, and staff pick one wherever they could type a discount, next to the open discount. A sent check with no table can take a discount too.</li>
+      <li>The phone gets the register and a floor screen, and works on phones as small as 320 px.</li>
+      <li>After sending an order on an iPad, choose what happens next. A check switcher and check labels keep several checks apart.</li>
+      <li>Search the register and admin with ⌘K, with a suggestion strip on touch screens.</li>
+      <li>Section plans for each shift, reviewed before they’re saved, and one active floor plan per revenue center.</li>
+      <li>Menus on a schedule, and courses you can rename.</li>
+      <li>Invite staff by link. The change log is written in plain words.</li>
+      <li>On the kitchen screen: bump mode, bump-bar keys learned per device, and a key legend.</li>
+      <li>When a ticket doesn’t print, it’s held, to print again or send to another printer. A printer guide walks through the checks.</li>
+      <li>Report figures in the logbook, for people allowed to see reports.</li>
+      <li>New report screens: Taxes, Sales by hour, Today’s X and past Z reports.</li>
+      <li>Send an item to more than one kitchen station, and add or remove a station across many products at once.</li>
+      <li>Audit history is kept through a database import.</li>
+      
+    </ul>
+    <p class="status">Older updates</p>
+    
+    <details class="update-fold">
+      <summary>The October 21 update</summary>
+      <p>Breaks on the time clock, open prices, and the floor on more screens.</p>
+      <ul>
+        <li>The time clock has breaks: Meal (unpaid, 30 minutes) and Rest (paid, 10 minutes). Labor reports count paid hours.</li>
+        <li>Servers can clock in without a PIN within 5 minutes of signing in.</li>
+        <li>Open-priced items: staff type the price on every ordering screen, up to a maximum the owner sets, with a PIN check when the order is sent.</li>
+        <li>Landscape iPads get the new register layout, with the Checks list and a floor screen that copes with crowded floors.</li>
+        <li>On the desktop register, in stores with tables, press f to swap the products for the floor, find a table or check, and preview its check before opening it.</li>
+        <li>On landscape iPads and phones, your name, clock in or out, breaks and log out sit at the bottom of the Start menu.</li>
+        <li>Servers see and tick off their own side work on the handheld.</li>
+        <li>On the kitchen screen&#39;s bump bar, number keys pick a ticket, Enter bumps it and Backspace recalls it.</li>
+        <li>Each kitchen printer prints a set number of copies, from 1 to 9.</li>
+        
+      </ul>
+    </details>
+    
+    <details class="update-fold">
+      <summary>The October 15 update</summary>
+      <p>A calmer look across the app, and the register on more screens.</p>
+      <ul>
+        <li>The whole app has a calmer look, with one highlighted main action on each screen.</li>
+        <li>The desktop register gets the new look, with a Checks button and a list of open checks.</li>
+        <li>An iPad held upright now uses the tablet layout, and the empty band across the top is gone.</li>
+        <li>Kitchen tickets print the check&#39;s note.</li>
+        <li>On a keyboard, o, t and c open the check details with that field ready to edit.</li>
+        <li>Escape closes the menu on a phone.</li>
+        <li>The customer-facing display shows every active order, not just the newest 50.</li>
+        
+      </ul>
+    </details>
+    
+    <details class="update-fold">
+      <summary>Update Z</summary>
+      <p>Sold-out items, clearer reports, and tighter control over who can do what.</p>
+      <ul>
+        <li>Sold-out items show on the menu tiles, with an “N left” pill when a count is set and a “Running Low” tag. Managers can mark an item sold out, or set how many are left, from the products list.</li>
+        <li>Before an order goes onto a table that already has a check, the register asks which check it belongs on. The &quot;Place order&quot; count now counts items, not lines.</li>
+        <li>The register picks its layout from the screen&#39;s size and orientation.</li>
+        <li>Owners can limit what each person may do, including who can open the cash drawer, and every settings change is logged. Only a primary owner can give out or extend owner access.</li>
+        <li>Owners choose how totals are rounded, and an order keeps the rounding it was opened with.</li>
+        <li>Every report adds up what each bill actually charged. A new Reports page sits beside the Dashboard, with Products, Payments and Labor moved into it.</li>
+        <li>Customer totals, visits and last visit come from paid bills, and are the same on the list and the detail page.</li>
+        <li>Revenue centers arrive: floor plans, sections and table placements for each area.</li>
+        <li>Prepaid payment methods wait for the final total before they settle.</li>
+        <li>When a bump of several items is refused, the kitchen screen shows one clear message.</li>
+        <li>Live updates back off politely when the server is busy, instead of retrying all at once.</li>
+        
+      </ul>
+    </details>
+    
+    <details class="update-fold">
+      <summary>Update Y</summary>
+      <p>The register, the kitchen and the handheld are easier to use on the screens people actually have.</p>
+      <ul>
+        <li>Search on the register shows its filter chips, a result count and suggestions as you type, on desktop, phones and tablets.</li>
+        <li>Every page has a shortcut list, and the g shortcuts jump between pages. The 0 key adds the tenth menu item.</li>
+        <li>Kitchen tickets keep one fixed size, two rows to a screen. A new &quot;By status&quot; view puts late tickets first, then the ones close to late. When a cook&#39;s tap is refused, the screen says why and keeps them signed in.</li>
+        <li>Kitchen tickets and receipts print names with curly quotes and the · dot instead of dropping the line.</li>
+        <li>Guest receipts no longer print a brand line.</li>
+        <li>The handheld for servers, on a landscape tablet, opens items, actions and discounts as a side panel instead of covering the check.</li>
+        <li>New side work lists: tasks are added by hand or from a template for each role, and each person sees their own list.</li>
+        <li>The time clock shows this week and has a form to ask for a fix to a punch.</li>
+        <li>The shift log has its own place in the sidebar.</li>
+        <li>The Roles page shows who can view and who can edit checks. Checks stay open to every role that works with orders.</li>
+        <li>Fixes: open-check cards stop stretching full width, and dashboard cards in a row line up to the same height.</li>
+        <li>Security improvements.</li>
+        
+      </ul>
+    </details>
+    
+    <details class="update-fold">
+      <summary>Update X</summary>
+      <p>Mostly about working faster at the register and in the kitchen, with a few fixes that stop surprises mid-shift.</p>
+      <ul>
+        <li>Search on the register is smarter: type a category, a tag or a price range like $4-6, and the menu narrows as you type.</li>
+        <li>On a keyboard, the register shows its shortcuts after your first key press, and quiet tips in the status line teach the faster way without popping anything up.</li>
+        <li>When you add a round to a check that was already sent, the kitchen ticket shows only the new items.</li>
+        <li>The kitchen screen is easier to read: it counts finished items, says when a ticket has more lines, labels served items, and shows &quot;All caught up&quot; when the board is clear. Cooks can mark an item done across every ticket from the All Day view.</li>
+        <li>New shift log: staff leave handover notes that can name a teammate, and that person can reply. Notes are permanent.</li>
+        <li>Closing the day starts with a check that lists anything still open and explains how the expected cash was worked out.</li>
+        <li>Staff roles show their permissions grouped into plain areas, and every permission change is recorded.</li>
+        <li>The handheld for servers shows &quot;Sent&quot; in its status line instead of covering the screen.</li>
+        <li>Fixes: a wrong clock-in PIN no longer signs anyone out; a table frees up only when its last open check closes; a check closed on another device shows as closed.</li>
+        
+      </ul>
+    </details>
+    
+  </div>
+</section>
+<section class="editorial section" aria-labelledby="unproven-title">
+  <h2 id="unproven-title">Not proven yet</h2>
+  <div class="prose">
+    <p>This is an experiment, not something to run a live restaurant on yet. Three things we have not proven:</p>
+    <ul class="status-list">
+      <li>That the floor keeps working through a real internet outage. It is built to; we haven't shown it end to end.</li>
+      <li>That several people can change the same check on a busy night without anything going wrong.</li>
+      <li>That it recovers cleanly after a failure, and works with every printer and card reader a restaurant might use.</li>
+    </ul>
+  </div>
+</section>
+<section class="invitation compact">
+  <h2>Have a question about how it’s built?</h2><p>Write to us.</p><a class="button" href="mailto:hello@swiftlabs.xyz">Email hello@swiftlabs.xyz <span aria-hidden="true">↗</span></a>
+</section>
+
+    </main>
+    <footer class="site-footer site-shell">
+      <div><a class="footer-name" href="/">Jane Swift</a><p>Computing, on human terms.</p></div>
+      <div><a href="mailto:hello@swiftlabs.xyz">hello@swiftlabs.xyz</a><p>New York, NY <span aria-hidden="true">·</span> swiftlabs.xyz</p></div>
+    </footer>
+  </body>
+</html>
