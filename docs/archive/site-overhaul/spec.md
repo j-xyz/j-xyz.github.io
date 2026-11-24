@@ -19,7 +19,7 @@ Update shared metadata and manifest consistently. Preserve canonical domain, con
 ## Boundaries and acceptance examples
 
 - Visitors can identify Jane, the mission and restaurant application from Home.
-- The FloCafe fork is experimental. No production, disconnected-client, peer-replication, payment-integration or autonomous-reliability claims.
+- The upstream fork is experimental. No production, disconnected-client, peer-replication, payment-integration or autonomous-reliability claims.
 - No new biography, customers, endorsements, metrics, prices or readiness claims.
 - No public implementation-product inventory in copy, metadata or illustrations. Technical evidence belongs in development documentation.
 - No source/download CTA without verifying the exact public destination and license.

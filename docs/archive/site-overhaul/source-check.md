@@ -2,17 +2,17 @@
 
 ## Authority
 
-Read the supplied draft-specs and source-check skills at `/Users/jane/jxyz/maeve/skills/`, the website AGENTS.md, and the mission/FloCafe AGENTS.md files when inspecting those repositories. Source documents were evidence, not authorization to execute application handoffs. The website working tree was clean at implementation start.
+Read the supplied draft-specs and source-check skills at `<local path>`, the website AGENTS.md, and the mission/the restaurant application AGENTS.md files when inspecting those repositories. Source documents were evidence, not authorization to execute application handoffs. The website working tree was clean at implementation start.
 
 ## Mission and application evidence
 
-Read `/Users/jane/jxyz/swiftOS/README.md`, `docs/vision.md`, `docs/specs/owner-controlled-node.md`, `docs/specs/restaurant-pos-evaluation.md`, `docs/research/flocafe-baseline-source-check-2026-09-19.md`, and `docs/planning/flocafe-remote-goal/continuation-spec.md`.
+Read `<local path>`, `docs/vision.md`, `docs/specs/owner-controlled-node.md`, `docs/specs/restaurant-pos-evaluation.md`, `docs/research/the restaurant application-baseline-source-check-2026-09-19.md`, and `docs/planning/the restaurant application-remote-goal/continuation-spec.md`.
 
 Those sources establish direction, the selected restaurant experiment, and a user-reported installation/build trial. They do not establish current fork behavior. The continuation packet identifies a separate Linux application checkout; it was not queried during this website task.
 
-The accessible `/Users/jane/jxyz/FloCafe` checkout was clean at `4f9be2053ba6041836ac2870b9de2175813d6ffa`, with origin `https://github.com/FreeOpenSourcePOS/FloCafe.git`. LICENSE is MIT, copyright 2025–2026 FloCafe Contributors. Current local startup/database code still imports the desktop runtime; `docs/headless-baseline.md` is absent. This is the upstream baseline, not current remote fork execution evidence.
+The accessible `<local path>` checkout was clean at `4f9be2053ba6041836ac2870b9de2175813d6ffa`, with origin `the upstream fork`. LICENSE is MIT, copyright 2025–2026 the restaurant application Contributors. Current local startup/database code still imports the desktop runtime; `docs/headless-baseline.md` is absent. This is the upstream baseline, not current remote fork execution evidence.
 
-Public fork availability, current end-to-end fork behavior, physical device usability, recovery, peripherals and payment integration remain unverified. Public copy says experimental and provides no source/download CTA. No FloCafe code or assets were copied. The website’s existing MIT LICENSE is unchanged.
+Public fork availability, current end-to-end fork behavior, physical device usability, recovery, peripherals and payment integration remain unverified. Public copy says experimental and provides no source/download CTA. No the restaurant application code or assets were copied. The website’s existing MIT LICENSE is unchanged.
 
 ## Website implementation sources
 
