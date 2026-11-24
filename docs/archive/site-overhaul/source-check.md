@@ -6,7 +6,7 @@ Read the supplied draft-specs and source-check skills at `<local path>`, the web
 
 ## Mission and application evidence
 
-Read `<local path>`, `docs/vision.md`, `docs/specs/owner-controlled-node.md`, `docs/specs/restaurant-pos-evaluation.md`, `docs/research/the restaurant application-baseline-source-check-2026-09-19.md`, and `docs/planning/the restaurant application-remote-goal/continuation-spec.md`.
+Read `<local path>`, `docs/vision.md`, `docs/specs/owner-controlled-node.md`, `docs/specs/restaurant-pos-evaluation.md`, `<local path>` (the baseline source check of 2026-09-19), and `<local path>` (the remote-goal continuation spec).
 
 Those sources establish direction, the selected restaurant experiment, and a user-reported installation/build trial. They do not establish current fork behavior. The continuation packet identifies a separate Linux application checkout; it was not queried during this website task.
 
