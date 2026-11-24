@@ -55,6 +55,8 @@ Build the static site:
 npm run build
 ```
 
+Before a push, check the built site with `python3 -I scripts/check-site.py --site _site --data src/_data --blocklist <file>`. Keep the blocklist outside the repository; a missing or unreadable blocklist makes the check fail.
+
 ## Deployment
 
 The generated output lives in `_site/`. The site keeps the custom domain via `src/CNAME`.
