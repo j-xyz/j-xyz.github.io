@@ -30,7 +30,7 @@ Raw results: [static-checks.json](static-checks.json), [browser-checks.json](bro
 - The browser controls expose no reduced-motion emulation. The stylesheet’s no-motion behavior was inspected, but toggling the OS preference was not performed.
 - Network request tracing was unavailable in the supported browser scope. Asset/stylesheet/script inspection found no external loads; this is not a captured network trace.
 - No physical mobile devices, screen-reader session or cross-browser matrix was exercised. Mobile evidence is viewport testing.
-- the upstream fork capability and public availability remain unverified; the site intentionally makes no stronger claim. Application tests were outside the site task.
+- The upstream fork capability and public availability remain unverified; the site intentionally makes no stronger claim. Application tests were outside the site task.
 - A full-page screenshot attempt produced stitching artifacts. Evidence files were replaced with viewport captures; no stitched image is offered as layout evidence.
 
 These limits prevent describing the work as a comprehensive accessibility certification. No known rendering or static validation failure remains from the checks performed.
