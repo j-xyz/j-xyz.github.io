@@ -182,7 +182,7 @@ def check_numbers(numbers, page, findings):
 
 def check(args):
   try:
-    blocklist = [(line_number, line.casefold())
+    blocklist = [(line_number, line.strip().casefold())
                  for line_number, line in enumerate(
                    args.blocklist.read_text(encoding="utf-8").splitlines(), 1)
                  if line.strip() and not line.startswith("#")]
