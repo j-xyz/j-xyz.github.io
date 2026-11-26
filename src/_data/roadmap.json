@@ -1,20 +1,17 @@
 {
   "inWorks": [
     "Custom roles that take orders on the register.",
-    "Staff sales that follow a check when it’s handed to someone else.",
-    "“My checks”: each person’s own checks, handed over cleanly when a shift changes.",
-    "Seats shown on the kitchen screen.",
-    "A notification center."
+    "“My checks”: each person’s own checks, handed over cleanly when a shift changes."
   ],
   "coming": [
     "Approvals from a manager’s phone.",
     "Kitchen alerts when food is ready.",
-    "Sizes and price levels.",
+    "Price levels.",
     "Ticket print options: an expo ticket, and a “goes with” line on kitchen tickets."
   ],
   "notScheduled": "card payments, and a live view of the tip pool so everyone in it sees their share.",
   "next": [
-    "Seats on every device, and kitchen tickets in seat order",
+    "Seats on Tableside, and kitchen tickets in seat order",
     "Courses, with hold and fire",
     "Split checks, and paying one check with more than one tender",
     "Tableside that works the same way as the register",
